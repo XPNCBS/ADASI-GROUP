@@ -1,0 +1,158 @@
+/* Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  flex: 1;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-list a:hover {
+  color: #83B3A5;
+}
+
+.navbar-list a.active {
+  color: #83B3A5;
+  border-bottom: 2px solid #83B3A5;
+  padding-bottom: 5px;
+}
+
+/* Language Switcher */
+.language-switcher {
+  min-width: 150px;
+}
+
+.language-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.language-select:hover {
+  border-color: #83B3A5;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  padding: 40px 0 20px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-navbar {
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Pages */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.page p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-list {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+
+  .language-select {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
