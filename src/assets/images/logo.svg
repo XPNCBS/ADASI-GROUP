@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 400 400"
+>
+    <polygon
+        points="200,60 60,302 340,302"
+        fill="none"
+        stroke="#83B3A5"
+        stroke-width="28"
+        stroke-linejoin="round"
+    />
+
+    <polygon
+        points="130,181 270,181 200,302"
+        fill="none"
+        stroke="#83B3A5"
+        stroke-width="28"
+        stroke-linejoin="round"
+    />
+</svg>
