@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
-
-// https://vite.dev/config/
+import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
-    react(),
+    tailwindcss(), 
+       react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
 })
+

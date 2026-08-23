@@ -1,0 +1,21 @@
+/* Pages */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  color: #5FB759;
+  margin-bottom: 20px;
+}
+
+.page p {
+  color: #666;
+  line-height: 1.6;
+}

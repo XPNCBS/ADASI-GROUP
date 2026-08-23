@@ -1,0 +1,37 @@
+/* Navbar */
+.navbar {
+  flex: 1;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-list a:hover {
+  color: #83B3A5;
+}
+
+.navbar-list a.active {
+  color: #83B3A5;
+  border-bottom: 2px solid #83B3A5;
+  padding-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-list {
+    gap: 15px;
+    font-size: 14px;
+  }
+}

@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <div className="page about-page">
-      <h1>О нас</h1>
+      <h1 className="page-title">О нас</h1>
       <p>Информация о компании Adasi Group</p>
       
       <button onClick={() => setIsModalOpen(true)} className="btn-primary">
