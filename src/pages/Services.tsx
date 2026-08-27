@@ -1,8 +1,11 @@
+import Title from "../components/shared/Title";
 export default function Services() {
   return (
-    <div className="page services-page">
-      <h1>Услуги</h1>
-      <p>Наши услуги и решения для вашего бизнеса</p>
+    <div className="page">
+      <Title
+        title="Услуги"
+        text="В ADASI Group Sdn. Bhd. мы гордимся тем, что предлагаем комплексную услугу доставки. От момента получения до отправки каждая деталь тщательно продумана, что гарантирует бесперебойную доставку ваших товаров по назначению."
+      />
     </div>
   );
 }

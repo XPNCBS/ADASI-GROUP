@@ -1,9 +1,9 @@
-import type { MouseEventHandler, ReactNode } from 'react';
+import type { MouseEventHandler, ReactNode } from "react";
 
 type NewsButtonProps = {
   children: ReactNode;
   className: string;
-  type?: 'button' | 'submit';
+  type?: "button" | "submit";
   onMouseEnter?: MouseEventHandler<HTMLButtonElement>;
   onMouseLeave?: MouseEventHandler<HTMLButtonElement>;
 };
@@ -11,9 +11,9 @@ type NewsButtonProps = {
 export default function NewsButton({
   children,
   className,
-  type = 'button',
+  type = "button",
   onMouseEnter,
-  onMouseLeave
+  onMouseLeave,
 }: NewsButtonProps) {
   return (
     <button

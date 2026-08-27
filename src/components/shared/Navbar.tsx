@@ -1,12 +1,12 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { path: '/', label: 'Главная' },
-  { path: '/services', label: 'Услуги' },
-  { path: '/products', label: 'Продукты' },
-  { path: '/about', label: 'О нас' },
-  { path: '/contacts', label: 'Контакты' },
-  { path: '/news', label: 'Новости' },
+  { path: "/", label: "Главная" },
+  { path: "/services", label: "Услуги" },
+  { path: "/products", label: "Продукты" },
+  { path: "/about", label: "О нас" },
+  { path: "/contacts", label: "Контакты" },
+  { path: "/news", label: "Новости" },
 ];
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
           <li key={item.path}>
             <Link
               to={item.path}
-              className={location.pathname === item.path ? 'active' : ''}
+              className={location.pathname === item.path ? "active" : ""}
             >
               {item.label}
             </Link>

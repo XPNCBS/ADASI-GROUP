@@ -1,8 +1,9 @@
+import Title from "../components/shared/Title";
+
 export default function Contacts() {
   return (
-    <div className="page contacts-page">
-      <h1>Контакты</h1>
-      <p>Свяжитесь с нами</p>
+    <div className="page">
+      <Title title="Контакты" text="Свяжитесь с нами" />
     </div>
   );
 }

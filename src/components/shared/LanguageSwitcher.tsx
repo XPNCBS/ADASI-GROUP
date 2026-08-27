@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const languages = [
-  { code: 'ru', name: 'Русский' },
-  { code: 'kk', name: 'Қазақша' },
-  { code: 'en', name: 'English' },
-  { code: 'uz', name: "O'zbekcha" },
-  { code: 'ms', name: 'Bahasa Melayu' },
+  { code: "ru", name: "Русский" },
+  { code: "kk", name: "Қазақша" },
+  { code: "en", name: "English" },
+  { code: "uz", name: "O'zbekcha" },
+  { code: "ms", name: "Bahasa Melayu" },
 ];
 
 export default function LanguageSwitcher() {
-  const [currentLang, setCurrentLang] = useState('ru');
+  const [currentLang, setCurrentLang] = useState("ru");
 
   const handleLanguageChange = (langCode: string) => {
     setCurrentLang(langCode);
     // TODO: Implement language change logic
-    console.log('Language switched to:', langCode);
+    console.log("Language switched to:", langCode);
   };
 
   return (

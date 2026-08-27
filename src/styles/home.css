@@ -1,12 +1,11 @@
 .home-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    padding: 1.25rem;
-    background-color: transparent;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem;
+  background-color: transparent;
 }
 .home-nav__title {
   font-size: 48px;

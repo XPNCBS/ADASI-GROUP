@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar {
-  flex: 1;
+  margin-left: auto;
 }
 
 .navbar-list {
@@ -19,14 +19,9 @@
 }
 
 .navbar-list a:hover {
-  color: #83B3A5;
+  color: #83b3a5;
 }
 
-.navbar-list a.active {
-  color: #83B3A5;
-  border-bottom: 2px solid #83B3A5;
-  padding-bottom: 5px;
-}
 
 /* Responsive */
 @media (max-width: 768px) {

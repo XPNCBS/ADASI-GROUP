@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Modal from "../components/shared/modal";
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="page about-page">
+    <div className="page">
       <h1 className="page-title">О нас</h1>
       <p>Информация о компании Adasi Group</p>
-      
+
       <button onClick={() => setIsModalOpen(true)} className="btn-primary">
         Открыть модальное окно
       </button>
