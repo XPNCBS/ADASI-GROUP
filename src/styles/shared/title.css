@@ -1,9 +1,13 @@
 .title {
-  background: linear-gradient(90deg, #0d274d 0%, #1b4b82 100%);
+ 
+  background-image: url('/public/images/header-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #ffffff;
   width: 100%;
   /* boxSizing: border-box; */
-  padding: 80px 80px 40px;
+  padding: 140px 80px 120px;
   position: relative;
 }
 .title__heading {
@@ -13,8 +17,8 @@
   letter-spacing: 1px;
 }
 .title__subheading {
-  borderleft: 2px solid rgba(255, 255, 255, 0.7);
+  border-left: 2px solid ;
   font-size: 14px;
-  paddingleft: 15px;
+  padding-left: 15px;
   opacity: 0.9;
 }

@@ -1,3 +1,4 @@
+import { useRef } from "react";
 export default function initializeHeaderController() {
   const header = document.querySelector<HTMLElement>(".header");
   const title = document.querySelector<HTMLElement>(".Title");

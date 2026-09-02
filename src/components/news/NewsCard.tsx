@@ -1,7 +1,9 @@
+
 interface NewsCardProps  {
   imageSrc: string;
 };
 export default function NewsCard({ imageSrc }: NewsCardProps) {
+
   return (
     <div className="news-card">
         <img src={imageSrc} alt="News" className="news-card-image" />

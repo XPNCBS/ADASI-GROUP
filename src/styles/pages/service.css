@@ -1,0 +1,6 @@
+.service-card {
+  @apply flex justify-center items-center p-4;
+}
+.service-card__title {
+   
+}

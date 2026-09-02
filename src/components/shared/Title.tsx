@@ -6,9 +6,10 @@ export default function Title({
   title: string;
 }) {
   return (
-    <div className="Title title">
-      <h1 className="title__heading">{title}</h1>
-      <div className="title__subheading">{text}</div>
+    
+    <div className="Title title"><div className="container">    <h1 className="title__heading">{title}</h1>
+      <div className="title__subheading">{text}</div></div>  
+      
     </div>
   );
 }

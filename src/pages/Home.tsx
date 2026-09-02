@@ -1,7 +1,6 @@
 export default function Home() {
   return (
-    <div className="page">
-      <div className="home-nav">
+    <div className="page"><div className="container"> <div className="home-nav">
         <h1 className="home-nav__title">ADASI GROUP</h1>
         <p className="home-nav__description">
           Товары и услуги — всё в одном месте
@@ -14,7 +13,8 @@ export default function Home() {
             Услуги
           </a>
         </div>
-      </div>
+      </div></div> 
+     
     </div>
   );
 }

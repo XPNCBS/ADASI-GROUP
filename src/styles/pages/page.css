@@ -1,15 +1,18 @@
 /* Pages */
 .page {
-  font-family:
+    width: 100%;
+    font-family:
     system-ui,
     -apple-system,
     sans-serif;
   background-color: #fff;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
 }
+.container{
 
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
 .page h1 {
   color: #fff;
   margin-bottom: 20px;

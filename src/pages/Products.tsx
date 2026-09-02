@@ -4,8 +4,8 @@ export default function Products() {
     <div className="page">
       <div className="title-section">
         <Title
-          title="Новости"
-          text="Пролистните ниже чтобы увидеть актуальные новости."
+          title="Наши Продукты"
+          text="Исследуйте наш широкий ассортимент продукции , отобранной с учетом самых высоких стандартов качества."
         />
       </div>
     </div>
