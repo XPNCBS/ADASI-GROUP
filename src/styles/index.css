@@ -1,0 +1,16 @@
+@import './normalize.css';
+@import "./shared/layout.css";
+@import "./shared/header.css";
+@import "./shared/navbar.css";
+@import "./shared/language-switcher.css";
+@import "./shared/footer.css";
+@import "./shared/button.css";
+@import "./shared/modal.css";
+@import "./pages/page.css";
+@import "./shared/title.css";
+@import "./pages/service.css";
+@import "./home.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -182,6 +182,6 @@
   font-size: 14px;
 }
 .news-footer-info-item{
-  @apply flex items-center ;
+  @apply flex gap-1;
   padding: 8px;
 }
