@@ -1,5 +1,5 @@
 /* CSS Reset & Base Styles */
-@import "tailwindcss";
+
 @import "/src/styles/home.css";
 * {
   margin: 0;

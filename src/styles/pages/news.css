@@ -1,5 +1,5 @@
 .news-content {
-  padding: 40px 10%;
+  padding: 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -41,10 +41,10 @@
 }
 .news-contact-title {
   color: #4caf50;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 .news-contact-grid {
   display: grid;
@@ -60,14 +60,14 @@
 .news-contact-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 .news-contact-item--address {
   align-items: flex-start;
 }
 .news-contact-icon {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -80,49 +80,39 @@
   background-color: #38a3a5;
 }
 .news-contact-icon--telegram {
-  background-color: #20a0e0;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1280px-Telegram_logo.svg.png);
+  background-position: inherit;
+  background-repeat: no-repeat;
 }
 .news-contact-icon--whatsapp {
   background-color: #25d366;
 }
 .news-contact-icon--instagram {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
+ 
 }
 .news-contact-icon--instagram::after {
   content: "📷";
 }
 .news-contact-text {
-  font-size: 13px;
-  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
 }
 .news-contact-text--address {
   line-height: 1.4;
 }
 .news-contact-link {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
+  color: #0088cc;
 }
-.news-contact-link--telegram {
-  color: #20a0e0;
-}
-.news-contact-link--whatsapp {
-  color: #25d366;
-}
-.news-contact-link--instagram {
-  color: #dc2743;
-}
+
+
 .news-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 }
 .news-form-input {
   width: 100%;
@@ -130,7 +120,7 @@
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   background-color: #f9f9f9;
-  font-size: 13px;
+  font-size: 16px;
   outline: none;
   box-sizing: border-box;
 }
@@ -183,9 +173,15 @@
 }
 .news-copyright {
   margin-top: 20px;
-  font-size: 11px;
+  font-size: 15px;
   color: #999;
 }
 .news-footer-info {
   line-height: 1.8;
+  gap: 8px;
+  font-size: 14px;
+}
+.news-footer-info-item{
+  @apply flex items-center ;
+  padding: 8px;
 }
