@@ -1,7 +1,9 @@
 import type { FormEvent } from "react";
 import ContactItem from "./shared/ContactItem";
 import NewsForm, { type NewsFormData } from "./shared/NewsForm";
-
+import { HiMiniBuildingOffice } from "react-icons/hi2";
+import { FaPhone } from "react-icons/fa";
+import { MdPlace } from "react-icons/md";
 type NewsContactSectionProps = {
   formData: NewsFormData;
   setFormData: (formData: NewsFormData) => void;
@@ -19,22 +21,23 @@ export default function NewsContactSection({
 
       <div className="news-contact-grid">
         <div className="news-contact-list">
-          <ContactItem iconClassName="news-contact-icon--teal">
+          <ContactItem iconClassName="news-contact-icon--teal news-contact-icon--phone " icon={<FaPhone size={20}/>}>
             <div className="news-contact-text">
               <div>Тел.: (+60) 3 9766 8630</div>
               <div>Факс: (+60) 3 9766 8631</div>
             </div>
           </ContactItem>
 
-          <ContactItem iconClassName="news-contact-icon--teal">
+          <ContactItem iconClassName="news-contact-icon--teal news-contact-icon--email" icon={<MdPlace size={20}/>}>
             <div className="news-contact-text">info@adasigroup.com</div>
           </ContactItem>
 
           <ContactItem
-            iconClassName="news-contact-icon--teal"
+            iconClassName="news-contact-icon--teal news-contact-icon--address"
             className="news-contact-item news-contact-item--address"
+            icon={<HiMiniBuildingOffice size={20}/>}
           >
-            <div className="news-contact-text news-contact-text--address">
+            <div className="news-contact-text news-contact-text--address" >
               N-05-03, Pusat Perdagangan,
               <br />
               Bandar Bukit Jalil, Куала-Лумпур, Малайзия, 57000

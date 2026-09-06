@@ -77,22 +77,38 @@
   flex-shrink: 0;
 }
 .news-contact-icon--teal {
-  background-color: #38a3a5;
+  background: linear-gradient(
+  135deg,
+  #182c27 0%,
+  #123c38 45%,
+  #0b5552 100%
+);
+}
+.news-contact-icon{
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news-contact-icon--phone{
+
+
+}
+.news-contact-icon--email{
+
+}
+.news-contact-icon--address{
+
 }
 .news-contact-icon--telegram {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1280px-Telegram_logo.svg.png);
-  background-position: inherit;
-  background-repeat: no-repeat;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1280px-Telegram_logo.svg.png');
 }
 .news-contact-icon--whatsapp {
-  background-color: #25d366;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hHPXmbYeJo6p1ZMAgNNv2F2DTO-6gy3klsoOwhwZuQ&s=10');
 }
 .news-contact-icon--instagram {
- 
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAfDHLEBApWX-CTjkTIzClXtIv-pFgjTbgHaKrqL-d-vjsHrqh78EW6r1w&s=10');
 }
-.news-contact-icon--instagram::after {
-  content: "📷";
-}
+
 .news-contact-text {
   font-size: 16px;
   font-weight: 600;
@@ -184,4 +200,15 @@
 .news-footer-info-item{
   @apply flex gap-1;
   padding: 8px;
+}
+.news-card {
+  @apply w-[300px] gap-2 grid
+}
+.news-card-image {
+  @apply block w-full;
+}
+.news-card-date {
+
+}
+.news-card-title {
 }
