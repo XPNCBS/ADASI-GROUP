@@ -1,5 +1,3 @@
-import Navbar from "./shared/Navbar";
-
 export default function Footer() {
   return (
     <>

@@ -1,6 +1,35 @@
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px 20px;
+}
+
 .service-card {
-  @apply flex justify-center items-center p-4;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 .service-card__title {
-   
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 35, 30, 0.5);
+}
+
+@media (max-width: 800px) {
+  .service-cards { grid-template-columns: 1fr; }
 }

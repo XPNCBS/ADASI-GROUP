@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Logo from "../assets/logo";
-import initializeHeaderController from "../controllers/headerController";
 import Navbar from "./shared/Navbar";
 import LanguageSwitcher from "./shared/LanguageSwitcher";
 import { useState } from "react";

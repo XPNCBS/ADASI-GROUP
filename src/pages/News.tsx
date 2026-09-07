@@ -15,9 +15,6 @@ export default function News() {
     message: "",
   });
 
-  // Состояние для ховера кнопки
-  const [isHovered, setIsHovered] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.phone) {
@@ -35,11 +32,7 @@ export default function News() {
           text="Пролистните ниже чтобы увидеть актуальные новости."
         />
       </div>
-      <NewsContent
-        isHovered={isHovered}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
+      <NewsContent>
         <NewsContactSection
           formData={formData}
           setFormData={setFormData}
