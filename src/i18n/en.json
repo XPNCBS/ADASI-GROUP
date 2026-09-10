@@ -1,0 +1,10 @@
+{
+  "header": {
+    "main": "Home",
+    "services": "Services",
+    "products": "Products",
+    "news": "News",
+    "about": "About us",
+    "contacts": "Contacts"
+  }
+}

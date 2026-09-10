@@ -7,7 +7,10 @@ export default function About() {
 
   return (
     <div className="page">
-       <Title title="Связаться с нами" text="Обращайтесь к нам за любыми запросами, отзывами или возможностями сотрудничества." />
+      <Title
+        title="Связаться с нами"
+        text="Обращайтесь к нам за любыми запросами, отзывами или возможностями сотрудничества."
+      />
 
       <button onClick={() => setIsModalOpen(true)} className="btn-primary">
         Открыть модальное окно

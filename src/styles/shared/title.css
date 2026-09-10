@@ -1,6 +1,5 @@
 .title {
- 
-  background-image: url('/public/images/header-bg.webp');
+  background-image: url("/public/images/header-bg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +16,7 @@
   letter-spacing: 1px;
 }
 .title__subheading {
-  border-left: 2px solid ;
+  border-left: 2px solid;
   font-size: 14px;
   padding-left: 15px;
   opacity: 0.9;

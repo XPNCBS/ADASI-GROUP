@@ -1,19 +1,19 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-
-const navItems = [
-  { path: "/", label: "Главная" },
-  { path: "/services", label: "Услуги" },
-  { path: "/products", label: "Продукты" },
-  { path: "/about", label: "О нас" },
-  { path: "/contacts", label: "Контакты" },
-  { path: "/news", label: "Новости" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t } = useTranslation();
+  const navItems = [
+    { path: "/", label: t("header.main") },
+    { path: "/services", label: t("header.services") },
+    { path: "/products", label: t("header.products") },
+    { path: "/about", label: t("header.about") },
+    { path: "/contacts", label: t("header.contacts") },
+    { path: "/news", label: t("header.news") },
+  ];
   return (
     <nav className="navbar">
       <button
@@ -23,10 +23,15 @@ export default function Navbar() {
         aria-controls="main-navigation"
         onClick={() => setIsOpen((open) => !open)}
       >
-        <span className="navbar-toggle-icon" aria-hidden="true">☰</span>
+        <span className="navbar-toggle-icon" aria-hidden="true">
+          ☰
+        </span>
         <span>Меню</span>
       </button>
-      <ul id="main-navigation" className={`navbar-list ${isOpen ? "navbar-list--open" : ""}`}>
+      <ul
+        id="main-navigation"
+        className={`navbar-list ${isOpen ? "navbar-list--open" : ""}`}
+      >
         {navItems.map((item) => (
           <li key={item.path}>
             <Link

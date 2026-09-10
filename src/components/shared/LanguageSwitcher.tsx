@@ -5,7 +5,7 @@ const languages = [
   { code: "kk", name: "Қазақша" },
   { code: "en", name: "English" },
   { code: "uz", name: "O'zbekcha" },
-  { code: "ms", name: "Bahasa Melayu" },
+  { code: "ms", name: "Melaya" },
 ];
 
 export default function LanguageSwitcher() {

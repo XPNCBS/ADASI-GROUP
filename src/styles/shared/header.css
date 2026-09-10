@@ -5,13 +5,13 @@
 .header {
   background-color: transparent;
   color: white;
-  
+
   padding: 15px 0;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 100;
-  @apply duration-300 
+  @apply duration-300;
 }
 
 .header.scrolled {
@@ -25,23 +25,21 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 40px;  
+  gap: 40px;
   padding: 0 20px;
   position: sticky;
 }
 
 .header-logo {
-
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: end;
+  gap: 30px;
   min-width: 150px;
 }
 
 .company-name {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
-
 }
 
 /* Responsive */

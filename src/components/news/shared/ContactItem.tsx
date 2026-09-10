@@ -5,7 +5,6 @@ type ContactItemProps = {
   iconClassName: string;
   icon?: ReactNode;
   className?: string;
-
 };
 
 export default function ContactItem({

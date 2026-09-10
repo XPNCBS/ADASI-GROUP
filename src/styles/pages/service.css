@@ -31,5 +31,7 @@
 }
 
 @media (max-width: 800px) {
-  .service-cards { grid-template-columns: 1fr; }
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
 }
