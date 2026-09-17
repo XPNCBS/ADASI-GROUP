@@ -22,7 +22,7 @@ export default function NewsContent({ children }: NewsContentProps) {
           excerpt="Команда подготовила новые решения для регулярных отправлений."
           content="Мы обновили процессы обработки регулярных отправлений: от консолидации грузов до финальной доставки. Новые решения помогают бизнесу планировать поставки точнее и контролировать расходы."
         />
-                <NewsCard
+        <NewsCard
           imageSrc="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80"
           date="28.07.2026"
           title="Оптимизируем поставки для бизнеса"

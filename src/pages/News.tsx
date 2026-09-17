@@ -3,8 +3,8 @@ import Title from "../components/shared/Title";
 import NewsContactSection from "../components/news/NewsContactSection";
 import NewsContent from "../components/news/NewsContent";
 import NewsFooter from "../components/news/NewsFooter";
+
 import type { NewsFormData } from "../components/news/shared/NewsForm";
-import "../styles/pages/news.css";
 
 export default function News() {
   const [formData, setFormData] = useState<NewsFormData>({

@@ -1,0 +1,20 @@
+.triangle {
+  --size: 200px;
+  --border: 14px;
+  --color: #a8cfc0;
+
+  width: var(--size);
+  height: calc(var(--size) * 0.866);
+
+  background: var(--color);
+
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+  mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0) border-box;
+
+  mask-composite: exclude;
+
+  padding: var(--border);
+}

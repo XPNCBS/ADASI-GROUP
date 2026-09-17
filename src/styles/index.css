@@ -7,10 +7,11 @@
 @import "./shared/button.css";
 @import "./shared/modal.css";
 @import "./pages/page.css";
+@import "./pages/news.css";
 @import "./shared/title.css";
 @import "./pages/service.css";
 @import "./home.css";
-
+@import "./shared/triangle.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

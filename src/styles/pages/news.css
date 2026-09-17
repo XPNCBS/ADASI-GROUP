@@ -24,8 +24,6 @@
   margin-bottom: 60px;
 }
 
-
-
 .news-cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -127,15 +125,10 @@
   overflow: hidden;
 }
 
-.news-card__more{
+.news-card__more {
   color: rgb(84, 84, 84);
   font-weight: 700;
-
 }
-
-
-
-
 
 .news-modal-image {
   width: 100%;
@@ -166,9 +159,17 @@
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+.news-contact-section {
+  max-width: 1160px;
+  margin: 0 auto;
+}
 .news-contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-image: url("/images/dotted-map-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   gap: 40px;
   margin-bottom: 60px;
 }

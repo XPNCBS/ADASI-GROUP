@@ -6,5 +6,8 @@
     "news": "News",
     "about": "About us",
     "contacts": "Contacts"
+  },
+  "home": {
+    "subtitle": "Products and services — everything in one place"
   }
 }
