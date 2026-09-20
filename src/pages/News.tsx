@@ -32,13 +32,14 @@ export default function News() {
         <Title title={t("pages.newsTitle")} text={t("pages.newsText")} />
       </div>
       <NewsContent>
+        <NewsFooter />
         <NewsContactSection
           formData={formData}
           setFormData={setFormData}
           handleSubmit={handleSubmit}
         />
       </NewsContent>
-      <NewsFooter />
+      
     </div>
   );
 }

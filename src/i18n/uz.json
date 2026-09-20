@@ -75,6 +75,11 @@
   },
   "footer": {
     "copyright": "© 2024 Adasi Group. Barcha huquqlar himoyalangan.",
-    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malayziya 57000"
+    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malayziya 57000",
+    "subscribeTitle": "Yangiliklarimizga obuna bo'ling",
+    "subscribeDescription": "So'nggi yangiliklar va yangilanishlarni olish uchun elektron pochtangizni qoldiring.",
+    "emailLabel": "Elektron pochta",
+    "emailPlaceholder": "Elektron pochtangizni kiriting",
+    "subscribeButton": "Obuna bo'lish"
   }
 }

@@ -107,6 +107,11 @@
   },
   "footer": {
     "copyright": "© 2024 Adasi Group. Все права защищены.",
-    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Куала-Лумпур, Малайзия 57000"
+    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Куала-Лумпур, Малайзия 57000",
+    "subscribeTitle": "Подпишитесь на наши новости",
+    "subscribeDescription": "Оставьте свой email, чтобы получать свежие новости и обновления.",
+    "emailLabel": "Электронная почта",
+    "emailPlaceholder": "Введите ваш email",
+    "subscribeButton": "Подписаться"
   }
 }

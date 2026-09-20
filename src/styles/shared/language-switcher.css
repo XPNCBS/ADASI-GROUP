@@ -3,6 +3,38 @@
   min-width: 150px;
 }
 
+.language-toggle {
+  display: none;
+}
+
+.language-options {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  padding: 4px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 12%);
+}
+
+.language-option {
+  padding: 8px 10px;
+  border: 0;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+}
+
+.language-option:hover {
+  background: #f0f7f4;
+}
+
 .language-select {
   padding: 8px 12px;
   border: 1px solid #ddd;
@@ -19,6 +51,26 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .language-switcher {
+    position: relative;
+    min-width: auto;
+    margin-left: auto;
+  }
+
+  .language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+  }
+
   .language-select {
     font-size: 12px;
     padding: 6px 10px;

@@ -89,6 +89,11 @@
   },
   "footer": {
     "copyright": "© 2024 Adasi Group. All rights reserved.",
-    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malaysia 57000"
+    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malaysia 57000",
+    "subscribeTitle": "Subscribe to our news",
+    "subscribeDescription": "Leave your email to receive the latest news and updates.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Enter your email",
+    "subscribeButton": "Subscribe"
   }
 }
