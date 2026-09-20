@@ -26,7 +26,7 @@ export default function Navbar() {
         <span className="navbar-toggle-icon" aria-hidden="true">
           ☰
         </span>
-        <span>Меню</span>
+        <span>{t("header.menu")}</span>
       </button>
       <ul
         id="main-navigation"

@@ -4,6 +4,7 @@ import NewsForm, { type NewsFormData } from "./shared/NewsForm";
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { FaPhone } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 type NewsContactSectionProps = {
   formData: NewsFormData;
   setFormData: (formData: NewsFormData) => void;
@@ -15,9 +16,11 @@ export default function NewsContactSection({
   setFormData,
   handleSubmit,
 }: NewsContactSectionProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="news-contact-section">
-      <h3 className="news-contact-title">СВЯЗАТЬСЯ С НАМИ</h3>
+      <h3 className="news-contact-title">{t("contact.title")}</h3>
 
       <div className="news-contact-grid">
         <div className="news-contact-list">
@@ -26,8 +29,8 @@ export default function NewsContactSection({
             icon={<FaPhone size={20} />}
           >
             <div className="news-contact-text">
-              <div>Тел.: (+60) 3 9766 8630</div>
-              <div>Факс: (+60) 3 9766 8631</div>
+              <div>{t("contact.phone")} (+60) 3 9766 8630</div>
+              <div>{t("contact.fax")} (+60) 3 9766 8631</div>
             </div>
           </ContactItem>
 
@@ -46,7 +49,7 @@ export default function NewsContactSection({
             <div className="news-contact-text news-contact-text--address">
               N-05-03, Pusat Perdagangan,
               <br />
-              Bandar Bukit Jalil, Куала-Лумпур, Малайзия, 57000
+              {t("footer.address")}
             </div>
           </ContactItem>
 

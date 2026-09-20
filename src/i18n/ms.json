@@ -5,9 +5,72 @@
     "products": "Produk",
     "news": "Berita",
     "about": "Tentang Kami",
-    "contacts": "Hubungi Kami"
+    "contacts": "Hubungi Kami",
+    "menu": "Menu"
   },
   "home": {
-    "subtitle": "Produk dan layanan — semuanya di satu tempat"
+    "subtitle": "Produk dan layanan — semuanya di satu tempat",
+    "toggleServices": "Togol perkhidmatan",
+    "ourServices": "Perkhidmatan kami",
+    "click": "Klik",
+    "learnMore": "Ketahui lebih lanjut →",
+    "goToServices": "Pergi ke perkhidmatan →",
+    "services": {
+      "trade": {
+        "label": "Perdagangan",
+        "title": "Perdagangan antarabangsa bersama rakan kongsi yang dipercayai",
+        "description": "Dalam dunia hari ini, perdagangan antarabangsa memainkan peranan penting dalam perkembangan perniagaan. Syarikat kami membantu perniagaan meluaskan sempadan dan memasuki pasaran baharu dengan menyediakan bekalan barangan dan perkhidmatan yang boleh dipercayai di seluruh dunia. Kami pakar dalam import dan eksport, logistik serta pelepasan kastam, sambil menawarkan penyelesaian menyeluruh untuk mengoptimumkan urusan perdagangan antarabangsa. Melalui rangkaian rakan kongsi yang luas, kami menyediakan harga yang kompetitif, produk berkualiti tinggi dan penghantaran tepat pada masanya. Pelanggan mempercayai kami kerana kami bekerja secara telus, mematuhi piawaian antarabangsa dan menjamin keselamatan setiap urus niaga. Kami membantu mencari pembekal terbaik, mengurangkan risiko dan meningkatkan kecekapan perdagangan. Hubungi kami untuk menakluki pasaran baharu bersama-sama."
+      },
+      "logistics": {
+        "label": "Logistik",
+        "title": "Penyelesaian logistik yang berkesan untuk perniagaan anda",
+        "description": "Dalam dunia perniagaan, logistik yang boleh dipercayai ialah kunci kejayaan. Syarikat kami menawarkan rangkaian perkhidmatan logistik yang lengkap untuk memastikan penghantaran kargo yang pantas dan selamat ke seluruh dunia. Kami membantu pelanggan mengoptimumkan rantaian bekalan, mengurangkan kos dan meningkatkan kecekapan pengangkutan. Kami mengendalikan pengangkutan antarabangsa dan tempatan, pelepasan kastam, perkhidmatan gudang serta pengurusan aliran kargo. Dengan teknologi moden dan pendekatan individu, kami memilih laluan serta kaedah penghantaran terbaik sambil menjamin keselamatan dan ketepatan masa setiap penghantaran. Kami menguruskan semua tugas logistik supaya anda boleh memberi tumpuan kepada perkembangan perniagaan. Hubungi kami untuk mendapatkan penyelesaian logistik yang sesuai."
+      },
+      "consulting": {
+        "label": "Perundingan",
+        "title": "Perkhidmatan perundingan: sokongan pakar untuk perniagaan anda",
+        "description": "Perniagaan yang berjaya memerlukan pendekatan strategik, keputusan yang tepat dan analisis profesional. Syarikat kami menyediakan perkhidmatan perundingan untuk membantu usahawan dan syarikat berkembang dengan berkesan, mengoptimumkan proses dan memasuki pasaran baharu. Kami pakar dalam strategi perniagaan, perancangan kewangan, sokongan perundangan, pengurusan risiko dan pembangunan hubungan antarabangsa. Pakar kami menganalisis pasaran, membangunkan penyelesaian tersuai dan membantu melaksanakannya dalam perniagaan anda. Dengan bekerjasama bersama kami, anda mendapat akses kepada pengalaman, kaedah yang terbukti dan alat inovatif untuk membuat keputusan yang tepat serta mencapai matlamat. Hubungi kami untuk membincangkan cara kami boleh membantu anda."
+      },
+      "education": {
+        "label": "Pendidikan",
+        "title": "Pendidikan di Malaysia: laluan anda menuju kejayaan",
+        "description": "Malaysia ialah pusat pendidikan yang berkembang pesat dan menawarkan pembelajaran berkualiti pada harga berpatutan. Syarikat kami membantu pelajar dari seluruh dunia mencari institusi pendidikan terbaik, mengurus kemasukan dan menerima sokongan sepanjang tempoh pengajian. Kami bekerjasama dengan universiti dan kolej terkemuka, menawarkan program sarjana muda, sarjana, kursus bahasa dan latihan profesional. Pakar kami membantu memilih program yang sesuai, menyediakan dokumen, mendapatkan visa pelajar dan menyesuaikan diri di negara baharu. Bersama kami, pendidikan di Malaysia menjadi mudah dicapai dan selesa. Kami memberikan sokongan lengkap daripada pertanyaan pertama hingga tamat pengajian dengan jayanya. Hubungi kami hari ini untuk memulakan langkah pertama menuju masa depan anda."
+      }
+    }
+  },
+  "contact": {
+    "title": "HUBUNGI KAMI",
+    "phone": "Tel.:",
+    "fax": "Faks:",
+    "weekdays": "Isn - Jum: 10:00 - 18:00"
+  },
+  "form": {
+    "name": "Nama",
+    "phone": "Telefon *",
+    "email": "E-mel",
+    "company": "Nama syarikat",
+    "message": "Terangkan keperluan anda atau ajukan soalan",
+    "submit": "Hantar",
+    "phoneRequired": "Sila masukkan nombor telefon!",
+    "success": "Borang dihantar!"
+  },
+  "pages": {
+    "servicesTitle": "Perkhidmatan",
+    "servicesText": "Di ADASI Group Sdn. Bhd., kami berbangga menawarkan perkhidmatan penghantaran yang menyeluruh. Setiap perincian dirancang dengan teliti untuk memastikan penghantaran barangan anda lancar.",
+    "productsTitle": "Produk Kami",
+    "productsText": "Terokai rangkaian produk kami yang luas dan dipilih mengikut piawaian kualiti tertinggi.",
+    "contactTitle": "Hubungi kami",
+    "aboutTitle": "Tentang kami",
+    "contactText": "Hubungi kami untuk sebarang pertanyaan, maklum balas atau peluang kerjasama.",
+    "newsTitle": "Berita",
+    "newsText": "Tatal ke bawah untuk melihat berita terkini.",
+    "openModal": "Buka tetingkap modal",
+    "aboutCompany": "Tentang Adasi Group",
+    "modalText": "Tetingkap modal ini mengandungi maklumat tambahan tentang syarikat kami."
+  },
+  "news": { "group": "ADASI GROUP", "title": "Berita", "more": "baca lagi..." },
+  "footer": {
+    "copyright": "© 2024 Adasi Group. Hak cipta terpelihara.",
+    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malaysia 57000"
   }
 }

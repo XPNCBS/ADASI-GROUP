@@ -1,5 +1,6 @@
 import type { ChangeEvent, FormEvent } from "react";
 import NewsButton from "./NewsButton";
+import { useTranslation } from "react-i18next";
 
 export type NewsFormData = {
   name: string;
@@ -20,6 +21,7 @@ export default function NewsForm({
   setFormData,
   handleSubmit,
 }: NewsFormProps) {
+  const { t } = useTranslation();
   const handleChange =
     (field: keyof NewsFormData) =>
     (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -30,14 +32,14 @@ export default function NewsForm({
     <form onSubmit={handleSubmit} className="news-form">
       <input
         type="text"
-        placeholder="Имя"
+        placeholder={t("form.name")}
         value={formData.name}
         onChange={handleChange("name")}
         className="news-form-input"
       />
       <input
         type="tel"
-        placeholder="Телефон *"
+        placeholder={t("form.phone")}
         required
         value={formData.phone}
         onChange={handleChange("phone")}
@@ -45,27 +47,27 @@ export default function NewsForm({
       />
       <input
         type="email"
-        placeholder="Электронная почта"
+        placeholder={t("form.email")}
         value={formData.email}
         onChange={handleChange("email")}
         className="news-form-input"
       />
       <input
         type="text"
-        placeholder="Название компании"
+        placeholder={t("form.company")}
         value={formData.company}
         onChange={handleChange("company")}
         className="news-form-input"
       />
       <textarea
-        placeholder="Опишите ваши требования или задайте любые вопросы"
+        placeholder={t("form.message")}
         rows={4}
         value={formData.message}
         onChange={handleChange("message")}
         className="news-form-input news-form-textarea"
       />
       <NewsButton type="submit" className="news-submit-button">
-        Отправить
+        {t("form.submit")}
       </NewsButton>
     </form>
   );

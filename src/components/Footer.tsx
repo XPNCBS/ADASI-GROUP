@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <>
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-info">
-            <p>&copy; 2024 Adasi Group. All rights reserved.</p>
+            <p>{t("footer.copyright")}</p>
           </div>
         </div>
       </footer>

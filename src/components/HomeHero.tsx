@@ -5,35 +5,13 @@ import { useTranslation } from "react-i18next";
 
 interface ServiceItem {
   id: string;
-  title: string;
-  description: string;
 }
 
 const SERVICES: ServiceItem[] = [
-  {
-    id: "trade",
-    title: "Торговля",
-    description:
-      "Разнообразный ассортимент товаров высокого качества со всего мира",
-  },
-  {
-    id: "logistics",
-    title: "Логистика",
-    description:
-      "Надежная доставка и управление цепочкой поставок по всем регионам",
-  },
-  {
-    id: "consulting",
-    title: "Консалтинг",
-    description:
-      "Профессиональные консультации и стратегические рекомендации для развития бизнеса",
-  },
-  {
-    id: "education",
-    title: "Образование",
-    description:
-      "Обучающие программы и повышение квалификации специалистов в различных сферах",
-  },
+  { id: "trade" },
+  { id: "logistics" },
+  { id: "consulting" },
+  { id: "education" },
 ];
 
 export default function HomeHero() {
@@ -56,20 +34,35 @@ export default function HomeHero() {
       <div className="home-hero">
         <div className="home-hero__content">
           <div className="home-hero__header">
-            <h1 className="home-hero__title">ADASI GROUP</h1>
+            <h1 className="home-hero__title">ВАШ ПУТЕВОДИТЕЛЬ ПО БИЗНЕСУ</h1>
           </div>
 
           <div className="home-hero__services-container">
             <button
               className={`home-hero__logo-button ${isExpanded ? "expanded" : ""}`}
               onClick={handleLogoClick}
-              aria-label="Toggle services"
+              aria-label={t("home.toggleServices")}
             >
               <div className="home-hero__logo-wrapper">
                 <Logo size={1000} />
               </div>
+
               <span className="home-hero__logo-text">
-                {isExpanded ? "Наши услуги" : "Нажмите"}
+                <span
+                  className={`home-hero__logo-text-item ${
+                    !isExpanded ? "is-visible" : ""
+                  }`}
+                >
+                  {t("home.click")}
+                </span>
+
+                <span
+                  className={`home-hero__logo-text-item ${
+                    isExpanded ? "is-visible" : ""
+                  }`}
+                >
+                  {t("home.ourServices")}
+                </span>
               </span>
             </button>
 
@@ -99,10 +92,10 @@ export default function HomeHero() {
                       </svg>
                     </div>
                     <h3 className="home-hero__service-title">
-                      {service.title}
+                      {t(`home.services.${service.id}.label`)}
                     </h3>
                     <p className="home-hero__service-preview">
-                      Узнать больше →
+                      {t("home.learnMore")}
                     </p>
                   </button>
                 ))}
@@ -112,23 +105,24 @@ export default function HomeHero() {
         </div>
       </div>
 
-      {/* Модалка для отображения деталей услуги */}
       <Modal
         isOpen={selectedService !== null}
         onClose={() => setSelectedService(null)}
       >
         {selectedService && (
           <div className="home-modal-content">
-            <h2 className="home-modal-title">{selectedService.title}</h2>
+            <h2 className="home-modal-title">
+              {t(`home.services.${selectedService.id}.title`)}
+            </h2>
             <p className="home-modal-description">
-              {selectedService.description}
+              {t(`home.services.${selectedService.id}.description`)}
             </p>
             <div className="home-modal-footer">
               <a
                 href={`/services?service=${selectedService.id}`}
                 className="home-modal-link"
               >
-                Перейти в услуги →
+                {t("home.goToServices")}
               </a>
             </div>
           </div>

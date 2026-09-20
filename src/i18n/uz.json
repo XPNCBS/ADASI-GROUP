@@ -5,9 +5,76 @@
     "products": "Mahsulotlar",
     "news": "Yangiliklar",
     "about": "Biz haqimizda",
-    "contacts": "Aloqa"
+    "contacts": "Aloqa",
+    "menu": "Menyu"
   },
   "home": {
-    "subtitle": "Mahsulotlar va xizmatlar — hammasi bir joyda"
+    "subtitle": "Mahsulotlar va xizmatlar — hammasi bir joyda",
+    "toggleServices": "Xizmatlarni ko'rsatish",
+    "ourServices": "Bizning xizmatlarimiz",
+    "click": "Bosing",
+    "learnMore": "Batafsil →",
+    "goToServices": "Xizmatlarga o'tish →",
+    "services": {
+      "trade": {
+        "label": "Savdo",
+        "title": "Ishonchli hamkor bilan xalqaro savdo",
+        "description": "Bugungi dunyoda xalqaro savdo biznes rivojida muhim o'rin tutadi. Kompaniyamiz korxonalarga chegaralarini kengaytirish va yangi bozorlarga chiqishda yordam berib, butun dunyo bo'ylab tovarlar va xizmatlarni ishonchli yetkazib berishni ta'minlaydi. Biz import va eksport, logistika hamda bojxona rasmiylashtiruvi bo'yicha ixtisoslashganmiz va tashqi iqtisodiy faoliyatni optimallashtirish uchun kompleks yechimlar taklif qilamiz. Keng hamkorlik aloqalarimiz tufayli raqobatbardosh narxlar, yuqori sifatli mahsulotlar va o'z vaqtida yetkazib berishni ta'minlaymiz. Biz shaffof ishlaymiz, xalqaro standartlarga rioya qilamiz va har bir bitim xavfsizligini kafolatlaymiz. Biznesingiz sohasidan qat'i nazar, eng yaxshi yetkazib beruvchilarni topish, xavflarni kamaytirish va savdo samaradorligini oshirishga yordam beramiz. Yangi bozorlarni egallash uchun biz bilan bog'laning."
+      },
+      "logistics": {
+        "label": "Logistika",
+        "title": "Biznesingiz uchun samarali logistika yechimlari",
+        "description": "Biznes olamida ishonchli logistika muvaffaqiyat kalitidir. Kompaniyamiz butun dunyo bo'ylab yuklarni tez va xavfsiz yetkazib berishni ta'minlaydigan logistika xizmatlarining to'liq majmuasini taklif qiladi. Biz mijozlarga ta'minot zanjirini optimallashtirish, xarajatlarni kamaytirish va tashish samaradorligini oshirishda yordam beramiz. Biz xalqaro va mahalliy tashuvlar, bojxona rasmiylashtiruvi, ombor xizmatlari hamda yuk oqimlarini boshqarishga ixtisoslashganmiz. Zamonaviy texnologiyalar va individual yondashuv yordamida eng yaxshi yo'nalishlar va yetkazib berish usullarini tanlaymiz, har bir yukning saqlanishi va o'z vaqtida yetib borishini kafolatlaymiz. Barcha logistika vazifalarini o'z zimmamizga olib, biznesingizni rivojlantirishga e'tibor qaratishingizga imkon beramiz. Siz uchun maqbul logistika yechimini topishimiz uchun bog'laning."
+      },
+      "consulting": {
+        "label": "Konsalting",
+        "title": "Konsalting xizmatlari: biznesingiz uchun ekspert ko'magi",
+        "description": "Muvaffaqiyatli biznes strategik yondashuv, aniq qarorlar va professional tahlilni talab qiladi. Kompaniyamiz tadbirkorlar va tashkilotlarga samarali rivojlanish, jarayonlarni optimallashtirish va yangi bozorlarga chiqishda yordam beradigan konsalting xizmatlarini taqdim etadi. Biz biznes strategiyasi, moliyaviy rejalashtirish, huquqiy qo'llab-quvvatlash, xatarlarni boshqarish va xalqaro aloqalarni rivojlantirishga ixtisoslashganmiz. Mutaxassislarimiz bozorni tahlil qiladi, individual yechimlar ishlab chiqadi va ularni biznesingizga joriy etishga yordam beradi. Biz bilan ishlash orqali to'g'ri qarorlar qabul qilish va maqsadlaringizga erishish imkonini beradigan tajriba, sinalgan usullar va innovatsion vositalarga ega bo'lasiz. Sizga qanday yordam berishimizni muhokama qilish uchun bog'laning."
+      },
+      "education": {
+        "label": "Ta'lim",
+        "title": "Malayziyada ta'lim: muvaffaqiyat sari yo'lingiz",
+        "description": "Malayziya qulay narxlarda sifatli ta'lim taklif qiladigan jadal rivojlanayotgan ta'lim markazidir. Kompaniyamiz butun dunyodan kelgan talabalarga eng yaxshi ta'lim muassasalarini topish, o'qishga kirishni rasmiylashtirish va ta'limning har bir bosqichida ko'mak olishga yordam beradi. Biz yetakchi universitet va kollejlar bilan hamkorlik qilib, bakalavriat, magistratura, til kurslari va kasbiy ta'lim dasturlarini taklif qilamiz. Mutaxassislarimiz ideal dastur tanlash, hujjatlarni tayyorlash, talaba vizasini olish va yangi mamlakatga moslashishda yordam beradi. Biz bilan Malayziyada ta'lim olish qulay va imkoniyatli bo'ladi. Dastlabki murojaatdan o'qishni muvaffaqiyatli tugatishgacha to'liq hamrohlik qilamiz. Rejalaringizni amalga oshirish yo'lidagi ilk qadamni bugun tashlash uchun biz bilan bog'laning."
+      }
+    }
+  },
+  "contact": {
+    "title": "BIZ BILAN BOG'LANING",
+    "phone": "Tel.:",
+    "fax": "Faks:",
+    "weekdays": "Du - Ju: 10:00 - 18:00"
+  },
+  "form": {
+    "name": "Ism",
+    "phone": "Telefon *",
+    "email": "Elektron pochta",
+    "company": "Kompaniya nomi",
+    "message": "Talablaringizni yozing yoki savol bering",
+    "submit": "Yuborish",
+    "phoneRequired": "Telefon raqamingizni kiriting!",
+    "success": "Forma yuborildi!"
+  },
+  "pages": {
+    "servicesTitle": "Xizmatlar",
+    "servicesText": "ADASI Group Sdn. Bhd. kompaniyasida keng qamrovli yetkazib berish xizmatini taklif qilishdan faxrlanamiz. Qabul qilishdan jo'natishgacha har bir tafsilot puxta o'ylangan.",
+    "productsTitle": "Mahsulotlarimiz",
+    "productsText": "Eng yuqori sifat standartlari asosida tanlangan mahsulotlarimizning keng assortimentini ko'rib chiqing.",
+    "contactTitle": "Biz bilan bog'laning",
+    "aboutTitle": "Biz haqimizda",
+    "contactText": "Har qanday savol, fikr-mulohaza yoki hamkorlik imkoniyati bo'yicha bizga murojaat qiling.",
+    "newsTitle": "Yangiliklar",
+    "newsText": "So'nggi yangiliklarni ko'rish uchun pastga aylantiring.",
+    "openModal": "Modal oynani ochish",
+    "aboutCompany": "Adasi Group haqida",
+    "modalText": "Ushbu modal oynada kompaniyamiz haqida qo'shimcha ma'lumot mavjud."
+  },
+  "news": {
+    "group": "ADASI GROUP",
+    "title": "Yangiliklar",
+    "more": "batafsil..."
+  },
+  "footer": {
+    "copyright": "© 2024 Adasi Group. Barcha huquqlar himoyalangan.",
+    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malayziya 57000"
   }
 }

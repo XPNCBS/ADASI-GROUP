@@ -1,11 +1,12 @@
 import { useState } from "react";
+import i18n from "../../i18n/i18n";
 
 const languages = [
   { code: "ru", name: "Русский" },
   { code: "kk", name: "Қазақша" },
   { code: "en", name: "English" },
   { code: "uz", name: "O'zbekcha" },
-  { code: "ms", name: "Melaya" },
+  { code: "ms", name: "Bahasa Melayu" },
 ];
 
 export default function LanguageSwitcher() {
@@ -13,8 +14,7 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (langCode: string) => {
     setCurrentLang(langCode);
-    // TODO: Implement language change logic
-    console.log("Language switched to:", langCode);
+    void i18n.changeLanguage(langCode);
   };
 
   return (

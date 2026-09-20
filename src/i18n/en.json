@@ -5,9 +5,90 @@
     "products": "Products",
     "news": "News",
     "about": "About us",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "menu": "Menu"
   },
   "home": {
-    "subtitle": "Products and services — everything in one place"
+    "subtitle": "Products and services — everything in one place",
+    "toggleServices": "Toggle services",
+    "ourServices": "Our services",
+    "click": "Click",
+    "learnMore": "Learn more →",
+    "goToServices": "Go to services →",
+    "services": {
+      "trade": {
+        "label": "Trade",
+        "title": "International trade with a reliable partner",
+        "description": "In today's world, international trade plays a key role in business growth. Our company helps businesses expand their reach and enter new markets by providing reliable supplies of goods and services worldwide. We specialize in import and export, logistics, and customs clearance, offering comprehensive solutions to optimize international business operations. Thanks to our broad network of partners, we provide competitive prices, high-quality products, and timely delivery. Our clients trust us because we work transparently, follow international standards, and guarantee the security of every transaction. Whatever your industry, we will help you find the best suppliers, minimize risks, and improve trade efficiency. With us, international business becomes simpler and more profitable. Contact us and we will help you conquer new markets."
+      },
+      "logistics": {
+        "label": "Logistics",
+        "title": "Effective logistics solutions for your business",
+        "description": "In the business world, reliable logistics is the key to success. Our company offers a full range of logistics services, ensuring fast and secure delivery of cargo worldwide. We help clients optimize their supply chains, reduce costs, and improve transportation efficiency. We specialize in international and local transportation, customs clearance, warehousing, and freight flow management. Using modern technology and an individual approach, we select the best routes and delivery methods, guaranteeing the safety and timely arrival of every shipment. By working with us, you gain a reliable partner who takes care of all logistics tasks and lets you focus on growing your business. Contact us and we will find the right logistics solution for you."
+      },
+      "consulting": {
+        "label": "Consulting",
+        "title": "Consulting services: expert support for your business",
+        "description": "A successful business requires strategic thinking, precise decisions, and professional analysis. Our company provides consulting services that help entrepreneurs and companies grow effectively, optimize processes, and enter new markets. We specialize in business strategy, financial planning, legal support, risk management, and the development of international connections. Our experts analyze the market, develop tailored solutions, and help implement them in your business. By working with us, you gain access to experience, proven methods, and innovative tools that enable you to make the right decisions and achieve your goals. Entrust your business to professionals and we will help you grow and develop in a globally competitive environment. Contact us to discuss how we can help you."
+      },
+      "education": {
+        "label": "Education",
+        "title": "Education in Malaysia: your path to success",
+        "description": "Malaysia is a rapidly developing education hub that offers quality learning at affordable prices. Our company helps students from around the world find the best educational institutions, complete their admissions, and receive support throughout their studies. We work with leading universities and colleges, offering bachelor's and master's programs, language courses, and professional training. Our specialists help select the ideal program, prepare documents, obtain a student visa, and adapt to a new country. With us, education in Malaysia becomes accessible and comfortable. We provide complete support from the first enquiry to the successful completion of studies. Trust the professionals and we will help you build a successful future. Contact us today to take the first step toward your plans."
+      }
+    }
+  },
+  "advantages": {
+    "eyebrow": "Our advantage",
+    "title": "What sets ADASI Group apart?",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "items": {
+      "partnership": { "title": "Outstanding partnership", "description": "Our legacy at ADASI Group is built on trust and unwavering integrity. We have established ourselves as a leading force in logistics by working alongside renowned brands and businesses. Our partnership approach is rooted in mutual growth, allowing our partners to benefit from our extensive industry experience." },
+      "support": { "title": "Constant customer support", "description": "At ADASI Group, our commitment to clients goes beyond simply providing services. We stand out through exceptional customer support, prioritizing your needs to improve the quality of your experience. With a dedicated team ready to help, we guarantee fast and effective solutions for every request." },
+      "reliability": { "title": "Punctuality and reliability", "description": "In logistics, precision is paramount. At ADASI Group, we embody the essence of reliability. Our optimized processes are designed for on-time deliveries, while our flawless track record reflects our commitment. When you trust us with your cargo, you experience punctuality like never before." },
+      "guidance": { "title": "Comprehensive strategic guidance", "description": "In the complex world of logistics, expert guidance is essential. That is why we offer comprehensive consulting services. Whether you need to optimize your supply chain, develop market expansion strategies, or benchmark against industry standards, our experienced professionals are ready to guide you toward success." },
+      "innovation": { "title": "Innovative solutions", "description": "ADASI Group is at the forefront of innovative logistics solutions. Our team continually explores new methods and technologies to improve our services and deliver unmatched results for our clients." },
+      "network": { "title": "Global network", "description": "With offices in many countries and partnerships across continents, ADASI Group has an extensive global network. This enables us to provide seamless services regardless of geographical boundaries." }
+    }
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "phone": "Phone:",
+    "fax": "Fax:",
+    "weekdays": "Mon - Fri: 10:00 - 18:00"
+  },
+  "form": {
+    "name": "Name",
+    "phone": "Phone *",
+    "email": "Email",
+    "company": "Company name",
+    "message": "Describe your requirements or ask any questions",
+    "submit": "Send",
+    "phoneRequired": "Please provide a phone number!",
+    "success": "Form submitted!"
+  },
+  "pages": {
+    "servicesTitle": "Services",
+    "servicesText": "At ADASI Group Sdn. Bhd., we are proud to offer a comprehensive delivery service. From receipt to dispatch, every detail is carefully considered to ensure seamless delivery of your goods to their destination.",
+    "productsTitle": "Our Products",
+    "productsText": "Explore our wide range of products, selected to meet the highest quality standards.",
+    "contactTitle": "Contact us",
+    "aboutTitle": "About us",
+    "contactText": "Contact us with any enquiries, feedback or opportunities for cooperation.",
+    "newsTitle": "News",
+    "newsText": "Scroll down to see the latest news.",
+    "openModal": "Open modal window",
+    "aboutCompany": "About Adasi Group",
+    "modalText": "This modal window contains additional information about our company."
+  },
+  "news": {
+    "group": "ADASI GROUP",
+    "title": "News",
+    "more": "read more..."
+  },
+  "footer": {
+    "copyright": "© 2024 Adasi Group. All rights reserved.",
+    "address": "N-05-03, Pusat Perdagangan, Bandar Bukit Jalil, Kuala Lumpur, Malaysia 57000"
   }
 }

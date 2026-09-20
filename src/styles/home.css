@@ -49,12 +49,13 @@
 }
 
 .home-hero__content {
+  margin-top: 30px;
   width: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .home-hero__header {
@@ -63,7 +64,7 @@
 }
 
 .home-hero__title {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 900;
   color: #1a1a1a;
   letter-spacing: -1px;
@@ -90,7 +91,7 @@ p.home-hero__subtitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+
   background: none;
 
   cursor: pointer;
@@ -101,10 +102,6 @@ p.home-hero__subtitle {
   justify-content: center;
 }
 
-.home-hero__logo-button:hover {
-  transform: scale(1.1);
-}
-
 .home-hero__logo-button.expanded {
   width: 180px;
   height: 180px;
@@ -113,6 +110,7 @@ p.home-hero__subtitle {
 .home-hero__logo-wrapper {
   width: 250px;
   height: 250px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,18 +121,39 @@ p.home-hero__subtitle {
 .home-hero__logo-button.expanded .home-hero__logo-wrapper {
   width: 100px;
   height: 100px;
+  margin-top: 0;
 }
 
 .home-hero__logo-text {
-  font-size: 14px;
-  font-weight: 600;
-  color: #22c55e;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
   transition: color 0.4s ease;
 }
 
-.home-hero__logo-button.expanded .home-hero__logo-text {
-  color: #fff;
-  font-size: 16px;
+.home-hero__logo-text {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 1.5em;
+}
+
+.home-hero__logo-text-item {
+  grid-area: 1 / 1;
+
+  opacity: 0;
+  transform: translateY(8px) scale(0.96);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  pointer-events: none;
+}
+
+.home-hero__logo-text-item.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* Services Grid */
@@ -143,14 +162,15 @@ p.home-hero__subtitle {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
   width: 100%;
-  animation: expandServices 0.6s ease-out;
+  animation: flyIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .home-hero__service-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 32px 24px;
 
   border-radius: 12px;
@@ -174,8 +194,8 @@ p.home-hero__subtitle {
 }
 
 .home-hero__service-icon {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,16 +204,16 @@ p.home-hero__subtitle {
 }
 
 .home-hero__service-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
   text-align: center;
 }
 
-.home-hero__service-preview {
-  font-size: 14px;
-  color: #22c55e;
+p.home-hero__service-preview {
+  font-size: 16px;
+  color: #b6d5b9;
   font-weight: 600;
   margin: 0;
   text-align: center;
@@ -394,5 +414,22 @@ p.home-hero__subtitle {
 
   .home-hero__service-card {
     padding: 20px 16px;
+  }
+}
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px) scale(0.01);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }

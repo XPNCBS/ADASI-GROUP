@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo";
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Modal from "../shared/modal";
 
@@ -16,6 +16,7 @@ export default function NewsCard({
   excerpt,
   content,
 }: NewsCardProps) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -36,7 +37,7 @@ export default function NewsCard({
 
           <p className="news-card__excerpt">
             {excerpt}
-            <span className="news-card__more">подробнее...</span>
+            <span className="news-card__more">{t("news.more")}</span>
           </p>
         </div>
       </button>

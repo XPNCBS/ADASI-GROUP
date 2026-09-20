@@ -5,25 +5,24 @@ interface LogoProps {
 export default function Logo({ size = 60 }: LogoProps) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 400 400"
       width={size}
       height={size}
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <polygon
-        points="200,60 60,302 340,302"
-        fill="none"
+      <path
+        d="M92.4355 74.5H7.56445L50 0.999023L92.4355 74.5Z"
         stroke="#83B3A5"
-        strokeWidth="28"
-        strokeLinejoin="round"
+        strokeWidth="7"
+        strokeLinejoin="miter"
       />
 
-      <polygon
-        points="130,181 270,181 200,302"
-        fill="none"
+      <path
+        d="M68 39H32L50 68L68 39Z"
         stroke="#83B3A5"
-        strokeWidth="28"
-        strokeLinejoin="round"
+        strokeWidth="7"
+        strokeLinejoin="miter"
       />
     </svg>
   );

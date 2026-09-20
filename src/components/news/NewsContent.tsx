@@ -1,12 +1,15 @@
 import type { ReactNode } from "react";
 import NewsCard from "./NewsCard";
+import { useTranslation } from "react-i18next";
 type NewsContentProps = { children: ReactNode };
 
 export default function NewsContent({ children }: NewsContentProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="news-content">
-      <span className="news-eyebrow">ГРУППА ADASI</span>
-      <h2 className="news-heading">Новости</h2>
+      <span className="news-eyebrow">{t("news.group")}</span>
+      <h2 className="news-heading">{t("news.title")}</h2>
       <div className="news-cards">
         <NewsCard
           imageSrc="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"

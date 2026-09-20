@@ -11,6 +11,7 @@
 @import "./shared/title.css";
 @import "./pages/service.css";
 @import "./home.css";
+@import "./shared/advantages.css";
 @import "./shared/triangle.css";
 @tailwind base;
 @tailwind components;

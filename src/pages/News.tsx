@@ -5,8 +5,10 @@ import NewsContent from "../components/news/NewsContent";
 import NewsFooter from "../components/news/NewsFooter";
 
 import type { NewsFormData } from "../components/news/shared/NewsForm";
+import { useTranslation } from "react-i18next";
 
 export default function News() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<NewsFormData>({
     name: "",
     phone: "",
@@ -18,19 +20,16 @@ export default function News() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.phone) {
-      alert("Пожалуйста, укажите телефон!");
+      alert(t("form.phoneRequired"));
       return;
     }
-    alert("Форма отправлена!");
+    alert(t("form.success"));
   };
 
   return (
     <div className="page">
       <div className="title-section">
-        <Title
-          title="Новости"
-          text="Пролистните ниже чтобы увидеть актуальные новости."
-        />
+        <Title title={t("pages.newsTitle")} text={t("pages.newsText")} />
       </div>
       <NewsContent>
         <NewsContactSection
