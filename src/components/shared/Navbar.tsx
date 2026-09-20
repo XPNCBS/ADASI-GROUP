@@ -1,9 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
-  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const navItems = [
@@ -36,7 +35,6 @@ export default function Navbar() {
           <li key={item.path}>
             <Link
               to={item.path}
-              className={location.pathname === item.path ? "active" : ""}
               onClick={() => setIsOpen(false)}
             >
               {item.label}

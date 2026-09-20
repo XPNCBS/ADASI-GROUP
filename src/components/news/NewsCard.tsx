@@ -44,7 +44,7 @@ export default function NewsCard({
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <img src={imageSrc} alt="" className="news-modal-image" />
         <h2>{title}</h2>
-        <p className="news-modal-date">{date}</p>
+        <p>{date}</p>
         <p>{content}</p>
       </Modal>
     </>

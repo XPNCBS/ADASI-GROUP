@@ -7,18 +7,23 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 8vh 16px 24px;
+  overflow-y: auto;
   z-index: 1000;
-  
 }
 
 .modal-content {
+  box-sizing: border-box;
   background-color: white;
   border-radius: 8px;
   padding: 30px;
   max-width: 500px;
   width: 90%;
+  max-height: 84vh;
+  margin: 0 auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   position: relative;
   animation: modalSlideIn 0.3s ease-out;
@@ -70,8 +75,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .modal-overlay {
+    padding: 5vh 10px 16px;
+  }
+
   .modal-content {
     width: 95%;
     padding: 20px;
+    max-height: 90vh;
   }
 }

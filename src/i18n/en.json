@@ -94,6 +94,18 @@
     "subscribeDescription": "Leave your email to receive the latest news and updates.",
     "emailLabel": "Email address",
     "emailPlaceholder": "Enter your email",
-    "subscribeButton": "Subscribe"
+    "subscribeButton": "Subscribe",
+    "documents": "Documents",
+    "privacyPolicy": "Privacy policy",
+    "termsOfUse": "Terms of use",
+    "privacyText": "We carefully process the personal data you provide through this website. Data is used only to contact you, handle requests, and improve the quality of our services. We do not share information with third parties except where required by law or necessary to provide the requested service.",
+    "termsText": "By using this website, you agree to provide accurate information and comply with applicable law. The website materials are provided for informational purposes. ADASI Group aims to keep the information current but does not guarantee that the website will be error-free or continuously available.",
+    "suggestionTitle": "Have a suggestion?",
+    "suggestionEmailLabel": "Your email",
+    "suggestionEmailPlaceholder": "Your email (optional)",
+    "suggestionLabel": "Your suggestion",
+    "suggestionPlaceholder": "Tell us how we can improve our service",
+    "suggestionButton": "Send",
+    "suggestionSuccess": "Thank you! Your suggestion has been sent."
   }
 }

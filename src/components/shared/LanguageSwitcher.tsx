@@ -32,7 +32,7 @@ export default function LanguageSwitcher() {
 
   if (isMobile) {
     return (
-      <div className={`language-switcher ${isOpen ? "language-switcher--open" : ""}`}>
+      <div className="language-switcher">
         <button
           type="button"
           className="language-toggle"

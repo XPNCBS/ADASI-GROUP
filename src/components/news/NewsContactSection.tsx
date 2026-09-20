@@ -25,7 +25,7 @@ export default function NewsContactSection({
       <div className="news-contact-grid">
         <div className="news-contact-list">
           <ContactItem
-            iconClassName="news-contact-icon--teal news-contact-icon--phone "
+            iconClassName="news-contact-icon--teal"
             icon={<FaPhone size={20} />}
           >
             <div className="news-contact-text">
@@ -35,14 +35,14 @@ export default function NewsContactSection({
           </ContactItem>
 
           <ContactItem
-            iconClassName="news-contact-icon--teal news-contact-icon--email"
+            iconClassName="news-contact-icon--teal"
             icon={<MdPlace size={20} />}
           >
             <div className="news-contact-text">info@adasigroup.com</div>
           </ContactItem>
 
           <ContactItem
-            iconClassName="news-contact-icon--teal news-contact-icon--address"
+            iconClassName="news-contact-icon--teal"
             className="news-contact-item news-contact-item--address"
             icon={<HiMiniBuildingOffice size={20} />}
           >

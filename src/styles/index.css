@@ -10,9 +10,9 @@
 @import "./pages/news.css";
 @import "./shared/title.css";
 @import "./pages/service.css";
+@import "./pages/about.css";
 @import "./home.css";
 @import "./shared/advantages.css";
-@import "./shared/triangle.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

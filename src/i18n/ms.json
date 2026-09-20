@@ -76,6 +76,18 @@
     "subscribeDescription": "Tinggalkan e-mel anda untuk menerima berita dan kemas kini terkini.",
     "emailLabel": "Alamat e-mel",
     "emailPlaceholder": "Masukkan e-mel anda",
-    "subscribeButton": "Langgan"
+    "subscribeButton": "Langgan",
+    "documents": "Dokumen",
+    "privacyPolicy": "Dasar privasi",
+    "termsOfUse": "Terma penggunaan",
+    "privacyText": "Kami memproses data peribadi yang anda berikan melalui laman web ini dengan berhati-hati. Data digunakan hanya untuk menghubungi anda, mengendalikan pertanyaan dan meningkatkan kualiti perkhidmatan kami. Kami tidak berkongsi maklumat dengan pihak ketiga kecuali diwajibkan oleh undang-undang atau diperlukan untuk menyediakan perkhidmatan yang diminta.",
+    "termsText": "Dengan menggunakan laman web ini, anda bersetuju untuk memberikan maklumat yang tepat dan mematuhi undang-undang yang berkenaan. Bahan di laman web ini disediakan untuk tujuan maklumat. ADASI Group berusaha memastikan maklumat sentiasa terkini, namun tidak menjamin laman web bebas daripada kesilapan atau sentiasa tersedia.",
+    "suggestionTitle": "Ada cadangan?",
+    "suggestionEmailLabel": "E-mel anda",
+    "suggestionEmailPlaceholder": "E-mel anda (pilihan)",
+    "suggestionLabel": "Cadangan anda",
+    "suggestionPlaceholder": "Beritahu kami cara menambah baik perkhidmatan kami",
+    "suggestionButton": "Hantar",
+    "suggestionSuccess": "Terima kasih! Cadangan anda telah dihantar."
   }
 }

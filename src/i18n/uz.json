@@ -80,6 +80,18 @@
     "subscribeDescription": "So'nggi yangiliklar va yangilanishlarni olish uchun elektron pochtangizni qoldiring.",
     "emailLabel": "Elektron pochta",
     "emailPlaceholder": "Elektron pochtangizni kiriting",
-    "subscribeButton": "Obuna bo'lish"
+    "subscribeButton": "Obuna bo'lish",
+    "documents": "Hujjatlar",
+    "privacyPolicy": "Maxfiylik siyosati",
+    "termsOfUse": "Foydalanish shartlari",
+    "privacyText": "Sayt orqali taqdim etgan shaxsiy ma'lumotlaringizni ehtiyotkorlik bilan qayta ishlaymiz. Ma'lumotlar faqat siz bilan bog'lanish, so'rovlarni ko'rib chiqish va xizmatlarimiz sifatini yaxshilash uchun ishlatiladi. Qonun talab qilmasa yoki so'ralgan xizmatni ko'rsatish uchun zarur bo'lmasa, ma'lumotlarni uchinchi tomonlarga bermaymiz.",
+    "termsText": "Ushbu saytdan foydalanish orqali siz to'g'ri ma'lumot taqdim etishga va amaldagi qonunlarga rioya qilishga rozilik bildirasiz. Sayt materiallari ma'lumot berish maqsadida taqdim etiladi. ADASI Group ma'lumotlarni yangilab turishga intiladi, biroq saytda xatolar bo'lmasligi yoki uning uzluksiz ishlashiga kafolat bermaydi.",
+    "suggestionTitle": "Taklifingiz bormi?",
+    "suggestionEmailLabel": "Elektron pochtangiz",
+    "suggestionEmailPlaceholder": "Elektron pochta (ixtiyoriy)",
+    "suggestionLabel": "Taklifingiz",
+    "suggestionPlaceholder": "Xizmatimizni qanday yaxshilashimiz mumkinligini yozing",
+    "suggestionButton": "Yuborish",
+    "suggestionSuccess": "Rahmat! Taklifingiz yuborildi."
   }
 }
