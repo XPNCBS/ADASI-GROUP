@@ -7,9 +7,9 @@ export default function NewsContent({ children }: NewsContentProps) {
   const { t } = useTranslation();
 
   return (
-    <div className="news-content">
+    <div className="news-content container">
       <span className="news-eyebrow">{t("news.group")}</span>
-      <h2 className="news-heading">{t("news.title")}</h2>
+      <h2 className="news-heading title-medium">{t("news.title")}</h2>
       <div className="news-cards">
         <NewsCard
           imageSrc="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"

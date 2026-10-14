@@ -8,7 +8,7 @@ const statIcons: IconType[] = [FaGlobe, FaBoxes, FaWeightHanging];
 export default function AboutStats() {
   return (
     <section className="about-stats" aria-label="Показатели ADASI Group">
-      <div className="about-stats__inner">
+      <div className="about-stats__inner container">
         {aboutStats.map(([value, label], index) => {
           const Icon = statIcons[index];
 

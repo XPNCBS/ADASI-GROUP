@@ -6,7 +6,7 @@ export default function NewsFooter() {
     <footer className="news-footer">
       <div className="news-footer-grid">
         <div>
-          <h3 className="news-footer-title">{t("footer.subscribeTitle")}</h3>
+          <h3 className="news-footer-title title-medium">{t("footer.subscribeTitle")}</h3>
           <p className="news-footer-description">
             {t("footer.subscribeDescription")}
           </p>

@@ -3,10 +3,10 @@ import { aboutCertificates, aboutMaterials } from "./aboutData";
 export default function AboutCertificates() {
   return (
     <section className="about-section">
-      <div className="about-container about-columns">
+      <div className="container about-columns">
         <div>
           <p className="about-label">Подтверждённое качество</p>
-          <h2>Сертификаты и материалы</h2>
+          <h2 className="title-medium">Сертификаты и материалы</h2>
           <p className="about-motivation">
             Работаем прозрачно и отвечаем за каждый этап поставки, чтобы ваше
             производство получало стабильное сырьё в нужные сроки.
@@ -18,7 +18,7 @@ export default function AboutCertificates() {
           </div>
         </div>
         <div className="about-materials-island">
-          <h3>Материалы для партнёров</h3>
+          <h3 className="title-small">Материалы для партнёров</h3>
           <div className="about-material-links">
             {aboutMaterials.map((item) => (
               <a href="/contacts" key={item}>

@@ -39,7 +39,6 @@ export default function News() {
           handleSubmit={handleSubmit}
         />
       </NewsContent>
-      
     </div>
   );
 }

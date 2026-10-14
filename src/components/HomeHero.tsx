@@ -32,9 +32,9 @@ export default function HomeHero() {
   return (
     <>
       <div className="home-hero">
-        <div className="home-hero__content">
+        <div className="home-hero__content container">
           <div className="home-hero__header">
-            <h1 className="home-hero__title">ВАШ ПУТЕВОДИТЕЛЬ ПО БИЗНЕСУ</h1>
+            <h1 className="home-hero__title title-large">ВАШ ПУТЕВОДИТЕЛЬ ПО БИЗНЕСУ</h1>
           </div>
 
           <div className="home-hero__services-container">
@@ -91,7 +91,7 @@ export default function HomeHero() {
                         />
                       </svg>
                     </div>
-                    <h3 className="home-hero__service-title">
+                    <h3 className="home-hero__service-title title-small">
                       {t(`home.services.${service.id}.label`)}
                     </h3>
                     <p className="home-hero__service-preview">
@@ -111,7 +111,7 @@ export default function HomeHero() {
       >
         {selectedService && (
           <div className="home-modal-content">
-            <h2 className="home-modal-title">
+            <h2 className="home-modal-title title-medium">
               {t(`home.services.${selectedService.id}.title`)}
             </h2>
             <p className="home-modal-description">

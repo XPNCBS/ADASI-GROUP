@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <>
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-        <div className="header-container">
+        <div className="container">
           <div className="header-logo">
             <div style={{ width: "50px", height: "50px" }}>
               <Logo />

@@ -8,8 +8,10 @@
   background-color: #fff;
 }
 .container {
+  box-sizing: border-box;
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 .page h1 {
   color: #fff;

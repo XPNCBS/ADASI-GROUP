@@ -6,13 +6,22 @@ interface ModalProps {
 }
 export default function Modal({ isOpen, onClose, children }: ModalProps) {
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
+    if (!isOpen) return;
+
+    const body = document.body;
+    const previousOverflow = body.style.overflow;
+    const previousPaddingRight = body.style.paddingRight;
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
+    if (scrollbarWidth > 0) {
+      body.style.paddingRight = `calc(${window.getComputedStyle(body).paddingRight} + ${scrollbarWidth}px)`;
     }
+    body.style.overflow = "hidden";
+
     return () => {
-      document.body.style.overflow = "";
+      body.style.overflow = previousOverflow;
+      body.style.paddingRight = previousPaddingRight;
     };
   }, [isOpen]);
   if (!isOpen) return null;

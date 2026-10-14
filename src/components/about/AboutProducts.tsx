@@ -4,9 +4,9 @@ import { aboutProducts } from "./aboutData";
 export default function AboutProducts() {
   return (
     <section className="about-section">
-      <div className="about-container">
+      <div className="container">
         <p className="about-label">Ассортимент</p>
-        <h2>Продукты для пищевого производства</h2>
+        <h2 className="title-medium">Продукты для пищевого производства</h2>
         <div className="about-products-table-wrap">
           <table className="about-products-table">
             <thead>
@@ -26,6 +26,17 @@ export default function AboutProducts() {
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="about-products-mobile">
+          {aboutProducts.map((product, index) => (
+            <article className="about-product-card" key={product.name}>
+              <span className="about-product-card__number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="title-small">{product.name}</h3>
+              <p>{product.description}</p>
+            </article>
+          ))}
         </div>
         <Link className="about-button" to="/products">
           Вся продукция →

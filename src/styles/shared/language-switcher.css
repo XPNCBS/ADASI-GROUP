@@ -54,18 +54,19 @@
   .language-switcher {
     position: relative;
     min-width: auto;
-    margin-left: auto;
+    margin-left: 0;
   }
 
   .language-toggle {
     display: flex;
+    min-height: 40px;
     align-items: center;
     gap: 6px;
-    padding: 8px 10px;
-    border: 1px solid currentColor;
+    padding: 0 10px;
+    border: 1px solid rgb(23 53 47 / 22%);
     border-radius: 4px;
     background: transparent;
-    color: inherit;
+    color: #17352f;
     cursor: pointer;
     font: inherit;
     font-size: 12px;

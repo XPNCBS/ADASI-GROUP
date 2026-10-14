@@ -19,8 +19,8 @@ export default function NewsContactSection({
   const { t } = useTranslation();
 
   return (
-    <div className="news-contact-section">
-      <h3 className="news-contact-title">{t("contact.title")}</h3>
+    <div className="news-contact-section container">
+      <h3 className="news-contact-title title-medium">{t("contact.title")}</h3>
 
       <div className="news-contact-grid">
         <div className="news-contact-list">

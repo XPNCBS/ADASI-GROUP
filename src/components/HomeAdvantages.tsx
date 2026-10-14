@@ -17,11 +17,11 @@ export default function HomeAdvantages() {
 
   return (
     <section className="home-advantages" aria-labelledby="advantages-title">
-      <div className="home-advantages__inner">
+      <div className="container">
         <span className="home-advantages__eyebrow">
           {t("advantages.eyebrow")}
         </span>
-        <h2 id="advantages-title" className="home-advantages__title">
+        <h2 id="advantages-title" className="home-advantages__title title-medium">
           {t("advantages.title")}
         </h2>
 
@@ -34,7 +34,7 @@ export default function HomeAdvantages() {
                 <FaRocket />
               </div>
               <div>
-                <h3 className="home-advantages__item-title">
+                <h3 className="home-advantages__item-title title-small">
                   {t(`advantages.items.${advantage}.title`)}
                 </h3>
                 <p className="home-advantages__description">

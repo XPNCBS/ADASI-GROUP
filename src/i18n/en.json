@@ -44,12 +44,30 @@
     "showMore": "Show more",
     "showLess": "Show less",
     "items": {
-      "partnership": { "title": "Outstanding partnership", "description": "Our legacy at ADASI Group is built on trust and unwavering integrity. We have established ourselves as a leading force in logistics by working alongside renowned brands and businesses. Our partnership approach is rooted in mutual growth, allowing our partners to benefit from our extensive industry experience." },
-      "support": { "title": "Constant customer support", "description": "At ADASI Group, our commitment to clients goes beyond simply providing services. We stand out through exceptional customer support, prioritizing your needs to improve the quality of your experience. With a dedicated team ready to help, we guarantee fast and effective solutions for every request." },
-      "reliability": { "title": "Punctuality and reliability", "description": "In logistics, precision is paramount. At ADASI Group, we embody the essence of reliability. Our optimized processes are designed for on-time deliveries, while our flawless track record reflects our commitment. When you trust us with your cargo, you experience punctuality like never before." },
-      "guidance": { "title": "Comprehensive strategic guidance", "description": "In the complex world of logistics, expert guidance is essential. That is why we offer comprehensive consulting services. Whether you need to optimize your supply chain, develop market expansion strategies, or benchmark against industry standards, our experienced professionals are ready to guide you toward success." },
-      "innovation": { "title": "Innovative solutions", "description": "ADASI Group is at the forefront of innovative logistics solutions. Our team continually explores new methods and technologies to improve our services and deliver unmatched results for our clients." },
-      "network": { "title": "Global network", "description": "With offices in many countries and partnerships across continents, ADASI Group has an extensive global network. This enables us to provide seamless services regardless of geographical boundaries." }
+      "partnership": {
+        "title": "Outstanding partnership",
+        "description": "Our legacy at ADASI Group is built on trust and unwavering integrity. We have established ourselves as a leading force in logistics by working alongside renowned brands and businesses. Our partnership approach is rooted in mutual growth, allowing our partners to benefit from our extensive industry experience."
+      },
+      "support": {
+        "title": "Constant customer support",
+        "description": "At ADASI Group, our commitment to clients goes beyond simply providing services. We stand out through exceptional customer support, prioritizing your needs to improve the quality of your experience. With a dedicated team ready to help, we guarantee fast and effective solutions for every request."
+      },
+      "reliability": {
+        "title": "Punctuality and reliability",
+        "description": "In logistics, precision is paramount. At ADASI Group, we embody the essence of reliability. Our optimized processes are designed for on-time deliveries, while our flawless track record reflects our commitment. When you trust us with your cargo, you experience punctuality like never before."
+      },
+      "guidance": {
+        "title": "Comprehensive strategic guidance",
+        "description": "In the complex world of logistics, expert guidance is essential. That is why we offer comprehensive consulting services. Whether you need to optimize your supply chain, develop market expansion strategies, or benchmark against industry standards, our experienced professionals are ready to guide you toward success."
+      },
+      "innovation": {
+        "title": "Innovative solutions",
+        "description": "ADASI Group is at the forefront of innovative logistics solutions. Our team continually explores new methods and technologies to improve our services and deliver unmatched results for our clients."
+      },
+      "network": {
+        "title": "Global network",
+        "description": "With offices in many countries and partnerships across continents, ADASI Group has an extensive global network. This enables us to provide seamless services regardless of geographical boundaries."
+      }
     }
   },
   "contact": {

@@ -3,6 +3,7 @@ import NewsContactSection from "../components/news/NewsContactSection";
 import type { NewsFormData } from "../components/news/shared/NewsForm";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Catalog from "../components/products/Catalog";
 export default function Products() {
   const { t } = useTranslation();
   const [formData, setFormData] = useState<NewsFormData>({
@@ -28,6 +29,7 @@ export default function Products() {
           title={t("pages.productsTitle")}
           text={t("pages.productsText")}
         />
+        <Catalog />
         <NewsContactSection
           formData={formData}
           setFormData={setFormData}

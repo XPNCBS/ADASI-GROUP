@@ -18,6 +18,7 @@ export default function Navbar() {
       <button
         type="button"
         className="navbar-toggle"
+        aria-label={t("header.menu")}
         aria-expanded={isOpen}
         aria-controls="main-navigation"
         onClick={() => setIsOpen((open) => !open)}
@@ -33,10 +34,7 @@ export default function Navbar() {
       >
         {navItems.map((item) => (
           <li key={item.path}>
-            <Link
-              to={item.path}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to={item.path} onClick={() => setIsOpen(false)}>
               {item.label}
             </Link>
           </li>

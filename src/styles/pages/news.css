@@ -1,8 +1,5 @@
 .news-content {
   padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .news-eyebrow {
@@ -12,10 +9,8 @@
   text-transform: uppercase;
 }
 .news-heading {
-  font-size: 30px;
   margin: 10px 0 25px 0;
   color: #1a1a1a;
-  font-weight: bold;
 }
 .news-cards {
   display: grid;
@@ -93,9 +88,6 @@
   margin: 0;
 
   color: #1a1a1a;
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.25;
 
   /* максимум 2 строки */
   display: -webkit-box;
@@ -131,14 +123,8 @@
 }
 .news-contact-title {
   color: #4caf50;
-  font-size: 24px;
-  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 50px;
-}
-.news-contact-section {
-  max-width: 1160px;
-  margin: 0 auto;
 }
 .news-contact-grid {
   display: grid;
@@ -250,8 +236,6 @@
 .news-footer-title {
   margin: 0 0 12px;
   color: #182c27;
-  font-size: 24px;
-  line-height: 1.25;
 }
 .news-footer-description {
   max-width: 520px;
@@ -319,10 +303,6 @@
   .news-footer {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-
-  .news-footer-title {
-    font-size: 21px;
   }
 
   .news-footer-form-row {

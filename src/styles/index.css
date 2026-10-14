@@ -11,6 +11,8 @@
 @import "./shared/title.css";
 @import "./pages/service.css";
 @import "./pages/about.css";
+@import "./pages/products.css";
+@import "./pages/product-page.css";
 @import "./home.css";
 @import "./shared/advantages.css";
 @tailwind base;

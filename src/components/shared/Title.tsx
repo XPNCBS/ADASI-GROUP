@@ -9,7 +9,7 @@ export default function Title({
     <div className="title">
       <div className="container">
         {" "}
-        <h1 className="title__heading">{title}</h1>
+        <h1 className="title__heading title-large">{title}</h1>
         <div className="title__subheading">{text}</div>
       </div>
     </div>

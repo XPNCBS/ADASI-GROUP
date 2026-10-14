@@ -32,7 +32,7 @@ export default function NewsCard({
           <div className="news-card__date">{date}</div>
 
           <div className="news-card__heading">
-            <h3 className="news-card__title">{title}</h3>
+            <h3 className="news-card__title title-small">{title}</h3>
           </div>
 
           <p className="news-card__excerpt">
@@ -43,7 +43,7 @@ export default function NewsCard({
       </button>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <img src={imageSrc} alt="" className="news-modal-image" />
-        <h2>{title}</h2>
+        <h2 className="title-medium">{title}</h2>
         <p>{date}</p>
         <p>{content}</p>
       </Modal>

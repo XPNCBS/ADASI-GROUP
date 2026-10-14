@@ -3,7 +3,7 @@
   height: 100vh;
 
   display: flex;
-  
+
   justify-content: center;
   padding: 80px;
   background-image: url(/public/images/mainPageBg.webp);
@@ -16,8 +16,6 @@
 
 .home-hero__content {
   margin-top: 30px;
-  width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,10 +28,7 @@
 }
 
 .home-hero__title {
-  font-size: 48px;
-  font-weight: 900;
   color: #1a1a1a;
-  letter-spacing: -1px;
 }
 
 .home-hero__services-container {
@@ -163,8 +158,6 @@
 }
 
 .home-hero__service-title {
-  font-size: 24px;
-  font-weight: 700;
   color: #ffffff;
   margin: 0;
   text-align: center;
@@ -180,14 +173,12 @@ p.home-hero__service-preview {
 
 /* Modal Content */
 .home-modal-content {
-  padding: 40px 30px;
+  padding: 20px 30px;
   text-align: center;
   animation: fadeIn 0.4s ease;
 }
 
 .home-modal-title {
-  font-size: 32px;
-  font-weight: 800;
   color: #1a1a1a;
   margin-bottom: 20px;
   color: #22c55e;
@@ -258,51 +249,81 @@ p.home-hero__service-preview {
 /* Responsive */
 @media (max-width: 768px) {
   .home-hero {
+    height: auto;
     min-height: 100vh;
-    padding: 20px;
+    min-height: 100svh;
+    overflow: visible;
+    padding: 88px 16px 28px;
   }
 
   .home-hero__content {
-    gap: 40px;
+    margin-top: 0;
+    gap: 20px;
   }
 
   .home-hero__title {
-    font-size: 42px;
+    margin: 0;
   }
 
-  .home-hero__services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-  }
-
-  .home-hero__service-card {
-    padding: 24px 16px;
+  .home-hero__services-container {
+    gap: 12px;
   }
 
   .home-hero__logo-button {
-    width: 120px;
-    height: 120px;
-    padding: 20px;
+    width: 132px;
+    height: 132px;
+    padding: 0;
+  }
+
+  .home-hero__logo-wrapper {
+    width: 124px;
+    height: 124px;
+    margin-top: 0;
   }
 
   .home-hero__logo-button.expanded {
-    width: 140px;
-    height: 140px;
+    width: 104px;
+    height: 104px;
   }
 
-}
+  .home-hero__logo-button.expanded .home-hero__logo-wrapper {
+    width: 76px;
+    height: 76px;
+  }
 
-@media (max-width: 480px) {
-  .home-hero__title {
-    font-size: 32px;
+  .home-hero__logo-text {
+    font-size: 16px;
   }
 
   .home-hero__services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .home-hero__service-card {
-    padding: 20px 16px;
+    min-width: 0;
+    min-height: 138px;
+    gap: 4px;
+    padding: 12px 8px;
+    border: 1px solid rgb(255 255 255 / 24%);
+    border-radius: 8px;
+    background: rgb(13 35 31 / 42%);
+    backdrop-filter: blur(5px);
+  }
+
+  .home-hero__service-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .home-hero__service-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  p.home-hero__service-preview {
+    font-size: 12px;
+    line-height: 1.2;
   }
 }
 

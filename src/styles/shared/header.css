@@ -20,9 +20,7 @@
   box-shadow: 0 10px 10px rgb(0 0 0 / 8%);
 }
 
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.header .container {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -44,19 +42,28 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .header-container {
+  .header,
+  .header.scrolled {
+    padding: 6px 0;
+    color: #17352f;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgb(18 46 39 / 12%);
+  }
+
+  .header .container {
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 10px;
+    padding: 0 16px;
   }
 
   .header-logo {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     min-width: 0;
-    gap: 10px;
+    gap: 8px;
   }
 
   .company-name {
-    font-size: 16px;
+    font-size: 14px;
     white-space: nowrap;
   }
 }

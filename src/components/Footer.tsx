@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
       <footer className="footer">
-        <div className="footer-container">
+        <div className="container">
           <div className="footer-main">
             <div className="footer-left">
               <div className="footer-brand">
@@ -21,7 +21,7 @@ export default function Footer() {
                 <span>Adasi Group</span>
               </div>
               <div className="footer-documents">
-                <h2 className="footer-documents-title">
+                <h2 className="footer-documents-title title-small">
                   {t("footer.documents")}
                 </h2>
                 <button
@@ -48,7 +48,7 @@ export default function Footer() {
                 event.currentTarget.reset();
               }}
             >
-              <h2 className="footer-suggestion-title">
+              <h2 className="footer-suggestion-title title-small">
                 {t("footer.suggestionTitle")}
               </h2>
               <input
@@ -84,7 +84,7 @@ export default function Footer() {
         onClose={() => setActiveDocument(null)}
       >
         <article className="footer-document-modal">
-          <h2>
+          <h2 className="title-medium">
             {activeDocument === "privacy"
               ? t("footer.privacyPolicy")
               : t("footer.termsOfUse")}

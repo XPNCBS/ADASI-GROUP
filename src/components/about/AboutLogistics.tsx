@@ -3,9 +3,9 @@ import { aboutLogistics, aboutLogisticsBenefits } from "./aboutData";
 export default function AboutLogistics() {
   return (
     <section className="about-section about-logistics">
-      <div className="about-container">
+      <div className="container">
         <p className="about-label">Поставка под контролем</p>
-        <h2>От производителя до вашего предприятия</h2>
+        <h2 className="title-medium">От производителя до вашего предприятия</h2>
         <div className="about-route">
           {aboutLogistics.map((step, index) => (
             <div key={step}>
