@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 export default function AboutMainInfo() {
+  const { t } = useTranslation();
+
   return (
     <section
       className="about-info-block container"
@@ -8,32 +12,23 @@ export default function AboutMainInfo() {
         <img
           className="about-info-block__image"
           src="/images/about-team.jpg"
-          alt="Команда ADASI Group на встрече с партнёрами"
+          alt={t("aboutPage.teamImageAlt")}
           onError={(event) => {
             event.currentTarget.src = "/images/mainPageBg.webp";
           }}
         />
-        <span className="about-info-block__caption">Команда ADASI Group</span>
+        <span className="about-info-block__caption">
+          {t("aboutPage.teamCaption")}
+        </span>
       </div>
       <div className="about-info-block__content">
-        <p className="about-label">О нас</p>
-        <h2 id="about-info-title" className="title-large">Про ADASI Group Sdn. Bhd.</h2>
+        <p className="about-label">{t("aboutPage.label")}</p>
+        <h2 id="about-info-title" className="title-large">
+          {t("aboutPage.infoTitle")}
+        </h2>
         <div className="about-info-block__copy">
-          <p>
-            Основанная в 2008 году, ADASI Group находится на переднем крае
-            инноваций и совершенства. Наша приверженность предоставлению
-            первоклассных услуг и продуктов позиционирует нас как лидера в
-            отрасли. Объединяя опытных профессионалов и молодые таланты, мы
-            привносим уникальный подход в каждый проект, за который берёмся.
-          </p>
-          <p>
-            Наши основные ценности вращаются вокруг честности, удовлетворённости
-            клиентов и устойчивого роста. Мы верим в установление прочных
-            отношений с нашими клиентами, понимание их потребностей и достижение
-            результатов, превосходящих их ожидания. Наше портфолио охватывает
-            различные отрасли, демонстрируя нашу универсальность и стремление к
-            совершенству.
-          </p>
+          <p>{t("aboutPage.infoParagraph1")}</p>
+          <p>{t("aboutPage.infoParagraph2")}</p>
         </div>
       </div>
     </section>

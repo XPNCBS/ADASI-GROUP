@@ -20,6 +20,12 @@
   box-shadow: 0 10px 10px rgb(0 0 0 / 8%);
 }
 
+.header.header--product {
+  color: #000000;
+  background-color: #f8f9fa;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 8%);
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -43,7 +49,8 @@
 /* Responsive */
 @media (max-width: 768px) {
   .header,
-  .header.scrolled {
+  .header.scrolled,
+  .header.header--product {
     padding: 6px 0;
     color: #17352f;
     background-color: #fff;

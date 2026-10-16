@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,8 @@ export default function Navbar() {
     { path: "/contacts", label: t("header.contacts") },
     { path: "/news", label: t("header.news") },
   ];
+  const location = useLocation();
+  
   return (
     <nav className="navbar">
       <button
@@ -34,7 +37,7 @@ export default function Navbar() {
       >
         {navItems.map((item) => (
           <li key={item.path}>
-            <Link to={item.path} onClick={() => setIsOpen(false)}>
+            <Link to={item.path} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === item.path ? "nav-link--active" : ""}`}>
               {item.label}
             </Link>
           </li>

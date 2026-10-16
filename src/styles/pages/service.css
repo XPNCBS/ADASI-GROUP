@@ -1,26 +1,31 @@
 .service-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  padding: 40px 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 20px 0px 20px 0px;
+  
 }
 
 .service-card {
-  min-height: 260px;
+  aspect-ratio: 16/10;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
+  border-radius: 12px;
 }
 .service-card__title {
   color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   text-align: center;
   position: relative;
   z-index: 1;
+  text-transform: uppercase;
 }
 .service-card::before {
   content: "";

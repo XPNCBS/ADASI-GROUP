@@ -5,13 +5,16 @@ import AboutManagement from "../components/about/AboutManagement";
 import AboutProducts from "../components/about/AboutProducts";
 import AboutStats from "../components/about/AboutStats";
 import Title from "../components/shared/Title";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="page about-page">
       <Title
-        title="ADASI Group — международный поставщик растительных масел, жиров и пищевых ингредиентов"
-        text="ADASI Group специализируется на поставках растительных масел, жиров и пищевых ингредиентов для предприятий пищевой промышленности. Мы работаем напрямую с производителями в Малайзии и Индонезии, организуя поставки в Казахстан и Россию. Компания представлена в Малайзии, Казахстане и России."
+        title={t("aboutPage.heroTitle")}
+        text={t("aboutPage.heroText")}
       />
       <AboutMainInfo />
       <AboutStats />

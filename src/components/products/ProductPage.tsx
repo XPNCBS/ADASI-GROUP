@@ -1,8 +1,10 @@
 import { Link, Navigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { products } from "./productData";
 
 export default function ProductPage() {
   const { slug } = useParams();
+  const { t } = useTranslation();
   const product = products.find((item) => item.slug === slug);
 
   if (!product) {
@@ -16,7 +18,7 @@ export default function ProductPage() {
           <span className="product-page__back-arrow" aria-hidden="true">
             ←
           </span>
-          Вернуться в каталог
+          {t("catalog.backToCatalog")}
         </Link>
 
         <article className="product-detail">
@@ -24,14 +26,18 @@ export default function ProductPage() {
             <img
               className="product-detail__image"
               src={product.image}
-              alt={product.name}
+              alt={t(`catalog.items.${product.slug}.name`)}
             />
           </div>
 
           <div className="product-detail__content">
-            <p className="product-detail__eyebrow">Каталог продукции</p>
-            <h1 className="product-detail__title title-large">{product.name}</h1>
-            <p className="product-detail__description">{product.description}</p>
+            <p className="product-detail__eyebrow">{t("catalog.title")}</p>
+            <h1 className="product-detail__title title-large">
+              {t(`catalog.items.${product.slug}.name`)}
+            </h1>
+            <p className="product-detail__description">
+              {t(`catalog.items.${product.slug}.description`)}
+            </p>
 
             <section
               className="product-specs"
@@ -41,19 +47,19 @@ export default function ProductPage() {
                 className="product-specs__title title-medium"
                 id="product-specs-title"
               >
-                Характеристики
+                {t("catalog.specifications")}
               </h2>
               {product.details.length > 0 ? (
                 <ul className="product-specs__list">
-                  {product.details.map((detail) => (
-                    <li className="product-specs__item" key={detail}>
-                      {detail}
+                  {product.details.map((_, index) => (
+                    <li className="product-specs__item" key={`${product.slug}-${index}`}>
+                      {t(`catalog.items.${product.slug}.details.${index}`)}
                     </li>
                   ))}
                 </ul>
               ) : (
                 <p className="product-specs__empty">
-                  Характеристики и фасовка уточняются по спецификации партии.
+                  {t("catalog.specificationsOnRequest")}
                 </p>
               )}
             </section>
@@ -61,11 +67,10 @@ export default function ProductPage() {
             <aside className="product-notes">
               <ul className="product-notes__list">
                 <li className="product-notes__item">
-                  Фактические характеристики и доступность зависят от продукта
-                  и конкретной партии.
+                  {t("catalog.productNotes.accuracy")}
                 </li>
                 <li className="product-notes__item">
-                  Изображение носит иллюстративный характер.
+                  {t("catalog.productNotes.image")}
                 </li>
               </ul>
             </aside>

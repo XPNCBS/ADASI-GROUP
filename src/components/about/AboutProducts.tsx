@@ -1,45 +1,50 @@
 import { Link } from "react-router-dom";
-import { aboutProducts } from "./aboutData";
+import { useTranslation } from "react-i18next";
+import { products } from "../products/productData";
 
 export default function AboutProducts() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-section">
       <div className="container">
-        <p className="about-label">Ассортимент</p>
-        <h2 className="title-medium">Продукты для пищевого производства</h2>
+        <p className="about-label">{t("aboutPage.assortment")}</p>
+        <h2 className="title-medium">{t("aboutPage.productsTitle")}</h2>
         <div className="about-products-table-wrap">
           <table className="about-products-table">
             <thead>
               <tr>
                 <th scope="col">№</th>
-                <th scope="col">Продукт</th>
-                <th scope="col">Описание</th>
+                <th scope="col">{t("aboutPage.productColumn")}</th>
+                <th scope="col">{t("aboutPage.descriptionColumn")}</th>
               </tr>
             </thead>
             <tbody>
-              {aboutProducts.map((product, index) => (
-                <tr key={product.name}>
+              {products.map((product, index) => (
+                <tr key={product.slug}>
                   <td>{String(index + 1).padStart(2, "0")}</td>
-                  <th scope="row">{product.name}</th>
-                  <td>{product.description}</td>
+                  <th scope="row">{t(`catalog.items.${product.slug}.name`)}</th>
+                  <td>{t(`catalog.items.${product.slug}.description`)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <div className="about-products-mobile">
-          {aboutProducts.map((product, index) => (
-            <article className="about-product-card" key={product.name}>
+          {products.map((product, index) => (
+            <article className="about-product-card" key={product.slug}>
               <span className="about-product-card__number">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="title-small">{product.name}</h3>
-              <p>{product.description}</p>
+              <h3 className="title-small">
+                {t(`catalog.items.${product.slug}.name`)}
+              </h3>
+              <p>{t(`catalog.items.${product.slug}.description`)}</p>
             </article>
           ))}
         </div>
         <Link className="about-button" to="/products">
-          Вся продукция →
+          {t("aboutPage.allProducts")}
         </Link>
       </div>
     </section>

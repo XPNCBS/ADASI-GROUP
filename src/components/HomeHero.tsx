@@ -34,7 +34,9 @@ export default function HomeHero() {
       <div className="home-hero">
         <div className="home-hero__content container">
           <div className="home-hero__header">
-            <h1 className="home-hero__title title-large">ВАШ ПУТЕВОДИТЕЛЬ ПО БИЗНЕСУ</h1>
+            <h1 className="home-hero__title title-large">
+              {t("home.heroTitle")}
+            </h1>
           </div>
 
           <div className="home-hero__services-container">
