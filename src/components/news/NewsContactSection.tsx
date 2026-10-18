@@ -47,8 +47,6 @@ export default function NewsContactSection({
             icon={<HiMiniBuildingOffice size={20} />}
           >
             <div className="news-contact-text news-contact-text--address">
-              N-05-03, Pusat Perdagangan,
-              <br />
               {t("footer.address")}
             </div>
           </ContactItem>

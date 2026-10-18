@@ -59,13 +59,15 @@
 
   .language-toggle {
     display: flex;
-    min-height: 40px;
+    width: 44px;
+    height: 40px;
+    justify-content: center;
     align-items: center;
-    gap: 6px;
-    padding: 0 10px;
+    gap: 4px;
+    padding: 0;
     border: 1px solid rgb(23 53 47 / 22%);
-    border-radius: 4px;
-    background: transparent;
+    border-radius: 8px;
+    background: #fff;
     color: #17352f;
     cursor: pointer;
     font: inherit;

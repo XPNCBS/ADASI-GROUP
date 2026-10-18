@@ -9,6 +9,7 @@
     "menu": "Menyu"
   },
   "home": {
+    "heroTitle": "Biznes olamidagi yo'lko'rsatuvchingiz",
     "subtitle": "Mahsulotlar va xizmatlar — hammasi bir joyda",
     "toggleServices": "Xizmatlarni ko'rsatish",
     "ourServices": "Bizning xizmatlarimiz",
@@ -35,6 +36,38 @@
         "label": "Ta'lim",
         "title": "Malayziyada ta'lim: muvaffaqiyat sari yo'lingiz",
         "description": "Malayziya qulay narxlarda sifatli ta'lim taklif qiladigan jadal rivojlanayotgan ta'lim markazidir. Kompaniyamiz butun dunyodan kelgan talabalarga eng yaxshi ta'lim muassasalarini topish, o'qishga kirishni rasmiylashtirish va ta'limning har bir bosqichida ko'mak olishga yordam beradi. Biz yetakchi universitet va kollejlar bilan hamkorlik qilib, bakalavriat, magistratura, til kurslari va kasbiy ta'lim dasturlarini taklif qilamiz. Mutaxassislarimiz ideal dastur tanlash, hujjatlarni tayyorlash, talaba vizasini olish va yangi mamlakatga moslashishda yordam beradi. Biz bilan Malayziyada ta'lim olish qulay va imkoniyatli bo'ladi. Dastlabki murojaatdan o'qishni muvaffaqiyatli tugatishgacha to'liq hamrohlik qilamiz. Rejalaringizni amalga oshirish yo'lidagi ilk qadamni bugun tashlash uchun biz bilan bog'laning."
+      }
+    }
+  },
+  "advantages": {
+    "eyebrow": "Bizning ustunliklarimiz",
+    "title": "ADASI Group'ni boshqalardan nima ajratib turadi?",
+    "showMore": "Ko'proq ko'rsatish",
+    "showLess": "Yashirish",
+    "items": {
+      "partnership": {
+        "title": "Ishonchli hamkorlik",
+        "description": "ADASI Group faoliyatining asosi — ishonch va mustahkam halollik. Mashhur brendlar va kompaniyalar bilan yonma-yon ishlab, logistika sohasida yetakchi o'rinlardan birini egalladik. Hamkorlikka bo'lgan yondashuvimiz o'zaro rivojlanishga asoslangan bo'lib, hamkorlarimizga sohadagi keng tajribamizdan foydalanish imkonini beradi."
+      },
+      "support": {
+        "title": "Mijozlarni doimiy qo'llab-quvvatlash",
+        "description": "ADASI Group'da mijozlar oldidagi mas'uliyatimiz xizmat ko'rsatish bilangina cheklanmaydi. Tajribangiz sifatini oshirish uchun ehtiyojlaringizni ustuvor qo'yib, alohida e'tibor va yordam ko'rsatamiz. Yordam berishga tayyor jamoamiz har bir murojaatga tezkor va samarali yechim taqdim etadi."
+      },
+      "reliability": {
+        "title": "O'z vaqtida yetkazib berish va ishonchlilik",
+        "description": "Logistika sohasida aniqlik juda muhim. ADASI Group ishonchlilik tamoyiliga amal qiladi. Jarayonlarimiz yuklarni o'z vaqtida yetkazishga yo'naltirilgan, ko'p yillik muvaffaqiyatli tajribamiz esa bu majburiyatimizni tasdiqlaydi. Yukingizni bizga ishonib topshirsangiz, o'z vaqtida xizmat ko'rsatishimizga amin bo'lasiz."
+      },
+      "guidance": {
+        "title": "Kompleks strategik maslahat",
+        "description": "Logistikaning murakkab sohasida mutaxassislar maslahati juda muhim. Shu sababli mijozlarimizga keng qamrovli konsalting xizmatlarini taklif qilamiz. Ta'minot zanjirini optimallashtirish, bozorni kengaytirish strategiyasini ishlab chiqish yoki faoliyatingizni soha standartlari bilan solishtirish kerak bo'lsa, tajribali mutaxassislarimiz muvaffaqiyat sari yo'lingizda yordam berishga tayyor."
+      },
+      "innovation": {
+        "title": "Innovatsion yechimlar",
+        "description": "ADASI Group innovatsion logistika yechimlarini rivojlantirishda yetakchi o'rinda turadi. Jamoamiz xizmatlarimizni yaxshilash va mijozlarimizga yuqori natijalar taqdim etish uchun yangi usullar hamda texnologiyalarni muntazam o'rganadi."
+      },
+      "network": {
+        "title": "Global tarmoq",
+        "description": "Ko'plab mamlakatlardagi ofislarimiz va turli qit'alardagi hamkorlarimiz ADASI Group'ning keng global tarmog'ini tashkil etadi. Bu geografik chegaralardan qat'i nazar, xizmatlarimizni uzluksiz ko'rsatish imkonini beradi."
       }
     }
   },

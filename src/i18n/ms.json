@@ -9,6 +9,7 @@
     "menu": "Menu"
   },
   "home": {
+    "heroTitle": "Panduan anda dalam dunia perniagaan",
     "subtitle": "Produk dan layanan — semuanya di satu tempat",
     "toggleServices": "Togol perkhidmatan",
     "ourServices": "Perkhidmatan kami",
@@ -35,6 +36,38 @@
         "label": "Pendidikan",
         "title": "Pendidikan di Malaysia: laluan anda menuju kejayaan",
         "description": "Malaysia ialah pusat pendidikan yang berkembang pesat dan menawarkan pembelajaran berkualiti pada harga berpatutan. Syarikat kami membantu pelajar dari seluruh dunia mencari institusi pendidikan terbaik, mengurus kemasukan dan menerima sokongan sepanjang tempoh pengajian. Kami bekerjasama dengan universiti dan kolej terkemuka, menawarkan program sarjana muda, sarjana, kursus bahasa dan latihan profesional. Pakar kami membantu memilih program yang sesuai, menyediakan dokumen, mendapatkan visa pelajar dan menyesuaikan diri di negara baharu. Bersama kami, pendidikan di Malaysia menjadi mudah dicapai dan selesa. Kami memberikan sokongan lengkap daripada pertanyaan pertama hingga tamat pengajian dengan jayanya. Hubungi kami hari ini untuk memulakan langkah pertama menuju masa depan anda."
+      }
+    }
+  },
+  "advantages": {
+    "eyebrow": "Kelebihan kami",
+    "title": "Apakah yang membezakan ADASI Group?",
+    "showMore": "Lihat lebih lanjut",
+    "showLess": "Lihat kurang",
+    "items": {
+      "partnership": {
+        "title": "Kerjasama yang cemerlang",
+        "description": "Asas ADASI Group ialah kepercayaan dan integriti yang teguh. Kami telah mengukuhkan kedudukan sebagai peneraju dalam industri logistik dengan bekerjasama rapat bersama jenama dan syarikat terkemuka. Pendekatan kerjasama kami berteraskan pertumbuhan bersama, sekali gus membolehkan rakan kongsi memanfaatkan pengalaman luas kami dalam industri."
+      },
+      "support": {
+        "title": "Sokongan pelanggan berterusan",
+        "description": "Komitmen ADASI Group terhadap pelanggan melangkaui penyediaan perkhidmatan semata-mata. Kami mengutamakan keperluan anda dan memberikan sokongan pelanggan yang istimewa untuk meningkatkan mutu pengalaman anda. Pasukan kami sentiasa bersedia membantu dengan penyelesaian yang pantas dan berkesan bagi setiap pertanyaan."
+      },
+      "reliability": {
+        "title": "Ketepatan masa dan kebolehpercayaan",
+        "description": "Dalam bidang logistik, ketepatan amat penting. ADASI Group mengutamakan kebolehpercayaan. Proses kami dirancang untuk memastikan penghantaran tepat pada masanya, manakala rekod prestasi kami membuktikan komitmen tersebut. Apabila anda mempercayakan kargo kepada kami, anda boleh mengharapkan perkhidmatan yang menepati masa."
+      },
+      "guidance": {
+        "title": "Panduan strategik yang menyeluruh",
+        "description": "Dalam dunia logistik yang kompleks, panduan pakar amat diperlukan. Oleh itu, kami menawarkan perkhidmatan perundingan yang menyeluruh. Sama ada anda ingin mengoptimumkan rantaian bekalan, membangunkan strategi peluasan pasaran atau membandingkan prestasi dengan piawaian industri, pakar kami yang berpengalaman sedia membimbing anda menuju kejayaan."
+      },
+      "innovation": {
+        "title": "Penyelesaian inovatif",
+        "description": "ADASI Group berada di barisan hadapan dalam penyelesaian logistik inovatif. Pasukan kami sentiasa meneroka kaedah dan teknologi baharu untuk menambah baik perkhidmatan serta memberikan hasil yang terbaik kepada pelanggan."
+      },
+      "network": {
+        "title": "Rangkaian global",
+        "description": "Dengan pejabat di pelbagai negara dan hubungan kerjasama merentasi benua, ADASI Group mempunyai rangkaian global yang luas. Hal ini membolehkan kami menyediakan perkhidmatan yang lancar tanpa mengira sempadan geografi."
       }
     }
   },

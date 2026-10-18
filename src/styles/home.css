@@ -14,6 +14,10 @@
   overflow: hidden;
 }
 
+.home-hero.is-expanded {
+  height: 100vh;
+}
+
 .home-hero__content {
   margin-top: 30px;
   display: flex;
@@ -49,7 +53,9 @@
   background: none;
 
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
   position: relative;
   width: 200px;
   height: 200px;
@@ -69,7 +75,17 @@
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-  transition: all 0.4s ease;
+  transition:
+    width 0.4s ease,
+    height 0.4s ease,
+    margin-top 0.4s ease;
+}
+
+.home-hero__logo-wrapper > svg {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 .home-hero__logo-button.expanded .home-hero__logo-wrapper {
@@ -113,10 +129,51 @@
 /* Services Grid */
 .home-hero__services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   width: 100%;
-  animation: flyIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.home-hero__services-container.is-expanded {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: 180px auto;
+  align-items: center;
+  gap: 20px 24px;
+}
+
+.home-hero__services-container.is-expanded .home-hero__logo-button {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: center;
+}
+
+.home-hero__services-container.is-expanded .home-hero__services-grid {
+  display: contents;
+}
+
+.home-hero__services-grid--top {
+  grid-column: 1 / -1;
+}
+
+.home-hero__services-grid--bottom {
+  grid-column: 1 / -1;
+}
+
+.home-hero__services-container.is-expanded .home-hero__service-card {
+  animation: serviceCardRise 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.home-hero__services-container.is-expanded .home-hero__service-card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.home-hero__services-container.is-expanded .home-hero__services-grid--bottom .home-hero__service-card:first-child {
+  animation-delay: 0.16s;
+}
+
+.home-hero__services-container.is-expanded .home-hero__services-grid--bottom .home-hero__service-card:nth-child(2) {
+  animation-delay: 0.24s;
 }
 
 .home-hero__service-card {
@@ -155,6 +212,12 @@
   justify-content: center;
   border-radius: 50%;
   transition: all 0.8s ease;
+}
+
+.home-hero__service-icon svg {
+  display: block;
+  width: 96px;
+  height: 96px;
 }
 
 .home-hero__service-title {
@@ -252,8 +315,18 @@ p.home-hero__service-preview {
     height: auto;
     min-height: 100vh;
     min-height: 100svh;
-    overflow: visible;
-    padding: 88px 16px 28px;
+    overflow-x: clip;
+    overflow-y: visible;
+    padding: 104px 16px 28px;
+    background-size: auto 100svh;
+    background-position: center top;
+  }
+
+  .home-hero.is-expanded {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow-y: visible;
   }
 
   .home-hero__content {
@@ -266,24 +339,51 @@ p.home-hero__service-preview {
   }
 
   .home-hero__services-container {
-    gap: 12px;
+    display: grid;
+    grid-template-areas:
+      "top"
+      "logo"
+      "bottom";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 138px 160px 138px;
+    row-gap: 22px;
+  }
+
+  .home-hero__services-container.is-expanded {
+    display: grid;
+    grid-template-areas:
+      "top"
+      "logo"
+      "bottom";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 138px 160px 138px;
+    row-gap: 22px;
   }
 
   .home-hero__logo-button {
-    width: 132px;
-    height: 132px;
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    width: 156px;
+    height: 156px;
     padding: 0;
   }
 
   .home-hero__logo-wrapper {
-    width: 124px;
-    height: 124px;
+    width: 148px;
+    height: 148px;
     margin-top: 0;
+    animation: heroTriangleIntro 1.35s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
   .home-hero__logo-button.expanded {
-    width: 104px;
+    width: 148px;
     height: 104px;
+  }
+
+  .home-hero__services-container.is-expanded .home-hero__logo-button {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .home-hero__logo-button.expanded .home-hero__logo-wrapper {
@@ -292,12 +392,45 @@ p.home-hero__service-preview {
   }
 
   .home-hero__logo-text {
-    font-size: 16px;
+    font-size: 19px;
+  }
+
+  .home-hero__logo-text-item {
+    white-space: nowrap;
   }
 
   .home-hero__services-grid {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+  }
+
+  .home-hero__services-grid--top {
+    grid-area: top;
+  }
+
+  .home-hero__services-grid--bottom {
+    grid-area: bottom;
+  }
+
+  .home-hero__services-container.is-expanded .home-hero__services-grid {
+    display: grid;
+  }
+
+  .home-hero__services-container.is-expanded .home-hero__service-card {
+    animation: serviceCardRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .home-hero__services-container.is-expanded .home-hero__service-card:nth-child(2) {
+    animation-delay: 0.08s;
+  }
+
+  .home-hero__services-container.is-expanded .home-hero__services-grid--bottom .home-hero__service-card:first-child {
+    animation-delay: 0.16s;
+  }
+
+  .home-hero__services-container.is-expanded .home-hero__services-grid--bottom .home-hero__service-card:nth-child(2) {
+    animation-delay: 0.24s;
   }
 
   .home-hero__service-card {
@@ -314,6 +447,19 @@ p.home-hero__service-preview {
   .home-hero__service-icon {
     width: 48px;
     height: 48px;
+    animation: serviceTriangleAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .home-hero__service-card:nth-child(2) .home-hero__service-icon {
+    animation-delay: 0.08s;
+  }
+
+  .home-hero__services-grid--bottom .home-hero__service-card:first-child .home-hero__service-icon {
+    animation-delay: 0.16s;
+  }
+
+  .home-hero__services-grid--bottom .home-hero__service-card:nth-child(2) .home-hero__service-icon {
+    animation-delay: 0.24s;
   }
 
   .home-hero__service-icon svg {
@@ -327,19 +473,122 @@ p.home-hero__service-preview {
   }
 }
 
-@keyframes flyIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-200px) scale(0.01);
+@media (max-width: 360px) {
+  .home-hero__services-grid {
+    gap: 8px;
   }
 
-  70% {
-    opacity: 1;
-    transform: translateY(10px) scale(1.05);
+  .home-hero__service-card {
+    padding-inline: 4px;
   }
 
-  100% {
+  .home-hero__service-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-hero__service-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-hero__service-title {
+    font-size: 14px;
+  }
+
+  p.home-hero__service-preview {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 700px) {
+  .home-hero,
+  .home-hero.is-expanded {
+    padding-top: 76px;
+    padding-bottom: 16px;
+  }
+
+  .home-hero__content {
+    gap: 12px;
+  }
+
+  .home-hero__title {
+    font-size: 28px;
+    line-height: 1.05;
+  }
+
+  .home-hero__services-container,
+  .home-hero__services-container.is-expanded {
+    grid-template-rows: 104px 126px 104px;
+    row-gap: 10px;
+  }
+
+  .home-hero__service-card {
+    min-height: 104px;
+    gap: 2px;
+    padding: 8px 4px;
+  }
+
+  .home-hero__service-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home-hero__service-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-hero__service-title {
+    font-size: 13px;
+    line-height: 1.15;
+  }
+
+  p.home-hero__service-preview {
+    font-size: 11px;
+  }
+}
+
+@keyframes heroTriangleIntro {
+  from {
+    opacity: 0.75;
+    transform: scale(2.3);
+  }
+
+  to {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes serviceCardRise {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes serviceTriangleAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.2) rotate(-24deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__logo-wrapper,
+  .home-hero__service-card,
+  .home-hero__service-icon {
+    animation: none;
   }
 }

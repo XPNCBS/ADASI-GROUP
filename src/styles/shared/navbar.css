@@ -46,18 +46,19 @@
     position: relative;
     flex: 0 0 auto;
     width: auto;
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .navbar-toggle {
     display: flex;
-    width: 40px;
+    width: 44px;
     height: 40px;
     justify-content: center;
     margin-left: 0;
     padding: 0;
     border-color: rgb(23 53 47 / 22%);
-    border-radius: 4px;
+    border-radius: 8px;
+    background: #fff;
   }
 
   .navbar-toggle > span:last-child {

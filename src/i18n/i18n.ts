@@ -9,8 +9,20 @@ import { pageTranslations } from "./pageTranslations";
 
 i18n.use(initReactI18next).init({
   resources: {
-    ru: { translation: { ...ru, ...pageTranslations.ru } },
-    en: { translation: { ...en, ...pageTranslations.en } },
+    ru: {
+      translation: {
+        ...ru,
+        ...pageTranslations.ru,
+        home: { ...ru.home, ...pageTranslations.ru.home },
+      },
+    },
+    en: {
+      translation: {
+        ...en,
+        ...pageTranslations.en,
+        home: { ...en.home, ...pageTranslations.en.home },
+      },
+    },
     kk: { translation: kk },
     ms: { translation: ms },
     uz: { translation: uz },

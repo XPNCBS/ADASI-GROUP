@@ -29,9 +29,39 @@ export default function HomeHero() {
     setIsExpanded(!isExpanded);
   };
 
+  const renderServiceCards = (services: ServiceItem[]) =>
+    services.map((service) => (
+      <button
+        key={service.id}
+        className="home-hero__service-card"
+        onClick={() => handleServiceClick(service)}
+      >
+        <div className="home-hero__service-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <polygon
+              points="12,4 2.6,20 21.4,20"
+              fill="none"
+              stroke="#83B3A5"
+              strokeWidth="3"
+              strokeLinejoin="miter"
+            />
+          </svg>
+        </div>
+        <h3 className="home-hero__service-title title-small">
+          {t(`home.services.${service.id}.label`)}
+        </h3>
+        <p className="home-hero__service-preview">{t("home.learnMore")}</p>
+      </button>
+    ));
+
   return (
     <>
-      <div className="home-hero">
+      <div className={`home-hero ${isExpanded ? "is-expanded" : ""}`}>
         <div className="home-hero__content container">
           <div className="home-hero__header">
             <h1 className="home-hero__title title-large">
@@ -39,7 +69,11 @@ export default function HomeHero() {
             </h1>
           </div>
 
-          <div className="home-hero__services-container">
+          <div
+            className={`home-hero__services-container ${
+              isExpanded ? "is-expanded" : ""
+            }`}
+          >
             <button
               className={`home-hero__logo-button ${isExpanded ? "expanded" : ""}`}
               onClick={handleLogoClick}
@@ -69,39 +103,14 @@ export default function HomeHero() {
             </button>
 
             {isExpanded && (
-              <div className="home-hero__services-grid">
-                {SERVICES.map((service) => (
-                  <button
-                    key={service.id}
-                    className="home-hero__service-card"
-                    onClick={() => handleServiceClick(service)}
-                  >
-                    <div className="home-hero__service-icon">
-                      <svg
-                        width="800px"
-                        height="800px"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <polygon
-                          points="12,4 2.6,20 21.4,20"
-                          fill="none"
-                          stroke="#83B3A5"
-                          stroke-width="3"
-                          stroke-linejoin="miter"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="home-hero__service-title title-small">
-                      {t(`home.services.${service.id}.label`)}
-                    </h3>
-                    <p className="home-hero__service-preview">
-                      {t("home.learnMore")}
-                    </p>
-                  </button>
-                ))}
-              </div>
+              <>
+                <div className="home-hero__services-grid home-hero__services-grid--top">
+                  {renderServiceCards(SERVICES.slice(0, 2))}
+                </div>
+                <div className="home-hero__services-grid home-hero__services-grid--bottom">
+                  {renderServiceCards(SERVICES.slice(2))}
+                </div>
+              </>
             )}
           </div>
         </div>
